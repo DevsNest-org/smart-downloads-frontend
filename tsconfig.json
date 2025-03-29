@@ -34,7 +34,7 @@
     ".next/types/**/*.ts",
     "next-env.d.ts",
     "dist/types/**/*.ts"
-  ],
+, "src/components/scrollcontext.tsx"  ],
   "exclude": [
     "node_modules"
   ]

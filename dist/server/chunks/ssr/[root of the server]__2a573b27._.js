@@ -93,7 +93,7 @@ if (__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$i
 }
 const __TURBOPACK__default__export__ = fontData;
 }}),
-"[project]/src/app/components/navbar.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
+"[project]/src/components/navbar.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname } = __turbopack_context__;
@@ -118,24 +118,24 @@ function Navbar() {
                         className: "self-center text-xl font-light whitespace-nowrap text-black",
                         children: "Devsnest"
                     }, void 0, false, {
-                        fileName: "[project]/src/app/components/navbar.tsx",
+                        fileName: "[project]/src/components/navbar.tsx",
                         lineNumber: 11,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
-                    fileName: "[project]/src/app/components/navbar.tsx",
+                    fileName: "[project]/src/components/navbar.tsx",
                     lineNumber: 7,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "inline-flex md:hidden text-3xl text-black",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io5$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["IoMenu"], {}, void 0, false, {
-                        fileName: "[project]/src/app/components/navbar.tsx",
+                        fileName: "[project]/src/components/navbar.tsx",
                         lineNumber: 16,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
-                    fileName: "[project]/src/app/components/navbar.tsx",
+                    fileName: "[project]/src/components/navbar.tsx",
                     lineNumber: 15,
                     columnNumber: 9
                 }, this),
@@ -152,12 +152,12 @@ function Navbar() {
                                     "aria-current": "page",
                                     children: "Instagram"
                                 }, void 0, false, {
-                                    fileName: "[project]/src/app/components/navbar.tsx",
+                                    fileName: "[project]/src/components/navbar.tsx",
                                     lineNumber: 21,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
-                                fileName: "[project]/src/app/components/navbar.tsx",
+                                fileName: "[project]/src/components/navbar.tsx",
                                 lineNumber: 20,
                                 columnNumber: 13
                             }, this),
@@ -167,12 +167,12 @@ function Navbar() {
                                     className: "block py-2 px-3 text-black ",
                                     children: "YouTube"
                                 }, void 0, false, {
-                                    fileName: "[project]/src/app/components/navbar.tsx",
+                                    fileName: "[project]/src/components/navbar.tsx",
                                     lineNumber: 30,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
-                                fileName: "[project]/src/app/components/navbar.tsx",
+                                fileName: "[project]/src/components/navbar.tsx",
                                 lineNumber: 29,
                                 columnNumber: 13
                             }, this),
@@ -182,34 +182,34 @@ function Navbar() {
                                     className: "block py-2 px-3 text-black ",
                                     children: "TikTok"
                                 }, void 0, false, {
-                                    fileName: "[project]/src/app/components/navbar.tsx",
+                                    fileName: "[project]/src/components/navbar.tsx",
                                     lineNumber: 35,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
-                                fileName: "[project]/src/app/components/navbar.tsx",
+                                fileName: "[project]/src/components/navbar.tsx",
                                 lineNumber: 34,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "[project]/src/app/components/navbar.tsx",
+                        fileName: "[project]/src/components/navbar.tsx",
                         lineNumber: 19,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
-                    fileName: "[project]/src/app/components/navbar.tsx",
+                    fileName: "[project]/src/components/navbar.tsx",
                     lineNumber: 18,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "[project]/src/app/components/navbar.tsx",
+            fileName: "[project]/src/components/navbar.tsx",
             lineNumber: 6,
             columnNumber: 7
         }, this)
     }, void 0, false, {
-        fileName: "[project]/src/app/components/navbar.tsx",
+        fileName: "[project]/src/components/navbar.tsx",
         lineNumber: 5,
         columnNumber: 5
     }, this);
@@ -228,7 +228,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$geist_e531dabc$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[next]/internal/font/google/geist_e531dabc.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$geist_mono_68a01160$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[next]/internal/font/google/geist_mono_68a01160.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_8e9a978$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[next]/internal/font/google/inter_8e9a978.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$navbar$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/navbar.tsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$navbar$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/navbar.tsx [app-rsc] (ecmascript)");
 ;
 ;
 ;
@@ -245,7 +245,7 @@ function RootLayout({ children }) {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
             className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$geist_e531dabc$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$geist_mono_68a01160$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_8e9a978$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} antialiased`,
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$navbar$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$navbar$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/layout.tsx",
                     lineNumber: 34,
                     columnNumber: 9
@@ -267,4 +267,4 @@ function RootLayout({ children }) {
 
 };
 
-//# sourceMappingURL=%5Broot%20of%20the%20server%5D__dff00820._.js.map
+//# sourceMappingURL=%5Broot%20of%20the%20server%5D__2a573b27._.js.map
