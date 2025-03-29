@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="bg-white ">
       <div className="h-18 w-[90%] flex flex-wrap items-center justify-between mx-auto ">
         <a
-          href="https://flowbite.com/"
+          href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <span className="self-center text-xl font-light whitespace-nowrap text-black">
