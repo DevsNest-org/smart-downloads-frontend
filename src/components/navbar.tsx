@@ -20,19 +20,19 @@ export default function Navbar() {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3  text-black hover:scale-110 duration-300"
+                className="block py-2 px-3  text-black"
                 aria-current="page"
               >
                 Instagram
               </a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-black hover:scale-110 duration-300 ">
+              <a href="#" className="block py-2 px-3 text-black ">
                 YouTube
               </a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-black hover:scale-110 duration-300 ">
+              <a href="#" className="block py-2 px-3 text-black ">
                 TikTok
               </a>
             </li>
