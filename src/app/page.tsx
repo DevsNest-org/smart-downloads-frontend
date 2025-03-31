@@ -1,4 +1,3 @@
-import Footer from "@/components/footer";
 import BestQuality from "@/components/home/bestquality";
 import DownloadFrom from "@/components/home/downloadfrom";
 import Header from "@/components/home/header";
@@ -11,7 +10,6 @@ export default function Home() {
       <HowitWorks />
       <BestQuality />
       <DownloadFrom />
-      <Footer />
     </div>
   );
 }
