@@ -1,5 +1,6 @@
+import BestQuality from "@/components/home/bestquality";
 import Header from "@/components/home/header";
-import Howitworks from "@/components/home/howitworks";
+import HowitWorks from "@/components/home/howitworks";
 
 export default function Home() {
   return (
@@ -7,7 +8,8 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center w-[90%]">
         <Header />
       </div>
-      <Howitworks />
+      <HowitWorks />
+      <BestQuality />
     </div>
   );
 }
