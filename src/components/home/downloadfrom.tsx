@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function DownloadFrom() {
   return (
-    <div className=" flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-250 mt-20 md:mt-0 ">
+    <div className=" flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-250 my-20 md:mt-0 lg:my-0 ">
       <div className=" h-auto w-full flex flex-col lg:flex-row justify-between ">
         <div className=" w-full flex flex-col">
           <h1 className=" text-4xl font-semibold text-[#1E1E1E]/60">

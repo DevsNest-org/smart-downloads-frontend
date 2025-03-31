@@ -783,6 +783,10 @@
     margin-block: calc(var(--spacing) * 10);
   }
 
+  .my-20 {
+    margin-block: calc(var(--spacing) * 20);
+  }
+
   .mt-0 {
     margin-top: calc(var(--spacing) * 0);
   }
@@ -1528,6 +1532,12 @@
   }
 
   @media (width >= 48rem) {
+    .md\:my-0 {
+      margin-block: calc(var(--spacing) * 0);
+    }
+  }
+
+  @media (width >= 48rem) {
     .md\:mt-0 {
       margin-top: calc(var(--spacing) * 0);
     }
@@ -1638,6 +1648,12 @@
     .md\:text-base {
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+
+  @media (width >= 64rem) {
+    .lg\:my-0 {
+      margin-block: calc(var(--spacing) * 0);
     }
   }
 
