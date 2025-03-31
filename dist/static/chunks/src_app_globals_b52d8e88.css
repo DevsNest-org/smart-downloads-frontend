@@ -685,6 +685,14 @@
     width: 90%;
   }
 
+  .w-\[95\%\] {
+    width: 95%;
+  }
+
+  .w-\[full\] {
+    width: full;
+  }
+
   .w-full {
     width: 100%;
   }

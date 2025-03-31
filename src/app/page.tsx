@@ -6,10 +6,8 @@ import HowitWorks from "@/components/home/howitworks";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center bg-white">
-      <div className="flex flex-col items-center justify-center w-[90%]">
-        <Header />
-      </div>
+    <div className="flex flex-col items-center bg-white">
+      <Header />
       <HowitWorks />
       <BestQuality />
       <DownloadFrom />

@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className=" flex flex-col items-center justify-center  h-[90vh] w-full rounded-[44px] text-center bg-linear-105 md:bg-linear-125 from-[#F9CE34] from-10% via-[#EE2A7B] via-40%  to-[#6228D7] to-70% ">
+    <div className=" flex flex-col items-center justify-center  h-[90vh] w-[90%] rounded-[44px] text-center bg-linear-105 md:bg-linear-125 from-[#F9CE34] from-10% via-[#EE2A7B] via-40%  to-[#6228D7] to-70% ">
       <h1 className="text-5xl md:text-5xl font-bold leading-18">
         Download <br className="block md:hidden" /> from{" "}
         <br className="block md:hidden" />{" "}
