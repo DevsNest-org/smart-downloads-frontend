@@ -16,7 +16,10 @@ export default function DownloadFrom() {
           </p>
         </div>
         <div className=" w-full flex flex-col mt-12 lg:mt-0 ">
-          <div className=" relative h-45 w-full flex flex-col justify-end rounded-[20px] bg-black">
+          <a
+            href="#"
+            className=" relative h-45 w-full flex flex-col justify-end rounded-[20px] bg-black"
+          >
             <div className="absolute top-4 right-4 flex flex-col items-center justify-center  h-10 w-10 rounded-full bg-white ">
               <div className="w-12">
                 <Image
@@ -32,8 +35,11 @@ export default function DownloadFrom() {
             <h1 className="absolute bottom-5 left-5 text-xl font-medium ">
               TikTok Downloader
             </h1>
-          </div>
-          <div className=" relative h-45 w-full flex flex-col justify-end rounded-[20px] mt-6 bg-[#FF0000]">
+          </a>
+          <a
+            href="#"
+            className=" relative h-45 w-full flex flex-col justify-end rounded-[20px] mt-6 bg-[#FF0000]"
+          >
             <div className="absolute top-4 right-4 flex flex-col items-center justify-center  h-10 w-10 rounded-full bg-white ">
               <div className="w-12">
                 <Image
@@ -49,7 +55,7 @@ export default function DownloadFrom() {
             <h1 className="absolute bottom-5 left-5 text-white text-xl font-medium ">
               TikTok Downloader
             </h1>
-          </div>
+          </a>
         </div>
       </div>
     </div>
