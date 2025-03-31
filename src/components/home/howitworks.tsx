@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HowitWorks() {
   return (
-    <div className=" flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-300 mt-20 lg:mt-20 ">
+    <div className=" flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-300 mt-20 md:mt-20 ">
       <div className=" h-auto w-full flex flex-col items-center">
         <h1 className=" text-4xl font-semibold text-purple">How it works</h1>
         <p className=" text-black/70 text-center mt-2 ">
