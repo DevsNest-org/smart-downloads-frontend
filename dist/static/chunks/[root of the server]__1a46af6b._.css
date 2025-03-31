@@ -694,68 +694,8 @@
     bottom: calc(var(--spacing) * 20);
   }
 
-  .bottom-\[-1\] {
-    bottom: -1px;
-  }
-
-  .bottom-\[-10px\] {
-    bottom: -10px;
-  }
-
-  .bottom-\[-14px\] {
-    bottom: -14px;
-  }
-
-  .bottom-\[-18px\] {
-    bottom: -18px;
-  }
-
-  .bottom-\[-19px\] {
-    bottom: -19px;
-  }
-
-  .bottom-\[-20\] {
-    bottom: -20px;
-  }
-
-  .bottom-\[-20px\] {
-    bottom: -20px;
-  }
-
   .bottom-\[-22px\] {
     bottom: -22px;
-  }
-
-  .bottom-\[-25px\] {
-    bottom: -25px;
-  }
-
-  .bottom-\[-30px\] {
-    bottom: -30px;
-  }
-
-  .bottom-\[-35px\] {
-    bottom: -35px;
-  }
-
-  .bottom-\[-40px\] {
-    bottom: -40px;
-  }
-
-  .bottom-\[-60px\] {
-    bottom: -60px;
-  }
-
-  .bottom-\[-90px\] {
-    bottom: -90px;
-  }
-
-  .bottom-\[-100px\] {
-    bottom: -100px;
-  }
-
-  .bottom-\[20px\] {
-    bottom: 20px;
   }
 
   .left-0 {
@@ -1098,10 +1038,6 @@
     width: 90%;
   }
 
-  .w-\[90\] {
-    width: 90px;
-  }
-
   .w-full {
     width: 100%;
   }
@@ -1192,24 +1128,8 @@
     border-radius: .25rem;
   }
 
-  .rounded-\[1\] {
-    border-radius: 1px;
-  }
-
-  .rounded-\[10\] {
-    border-radius: 10px;
-  }
-
   .rounded-\[10px\] {
     border-radius: 10px;
-  }
-
-  .rounded-\[12px\] {
-    border-radius: 12px;
-  }
-
-  .rounded-\[16px\] {
-    border-radius: 16px;
   }
 
   .rounded-\[18px\] {
@@ -1226,10 +1146,6 @@
 
   .rounded-\[25px\] {
     border-radius: 25px;
-  }
-
-  .rounded-\[27px\] {
-    border-radius: 27px;
   }
 
   .rounded-\[44px\] {
@@ -1271,20 +1187,8 @@
     background-color: var(--color-gray-100);
   }
 
-  .bg-gray-100\/20 {
-    background-color: color-mix(in oklab, var(--color-gray-100) 20%, transparent);
-  }
-
   .bg-gray-100\/50 {
     background-color: color-mix(in oklab, var(--color-gray-100) 50%, transparent);
-  }
-
-  .bg-gray-100\/60 {
-    background-color: color-mix(in oklab, var(--color-gray-100) 60%, transparent);
-  }
-
-  .bg-gray-100\/80 {
-    background-color: color-mix(in oklab, var(--color-gray-100) 80%, transparent);
   }
 
   .bg-gray-200 {
@@ -1334,14 +1238,6 @@
     --tw-gradient-from-position: 10%;
   }
 
-  .from-100\% {
-    --tw-gradient-from-position: 100%;
-  }
-
-  .from-1100\% {
-    --tw-gradient-from-position: 1100%;
-  }
-
   .via-\[\#EE2A7B\] {
     --tw-gradient-via: #ee2a7b;
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
@@ -1357,33 +1253,8 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .to-\[0\] {
-    --tw-gradient-to: 0;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-
-  .to-0\% {
-    --tw-gradient-to-position: 0%;
-  }
-
   .to-70\% {
     --tw-gradient-to-position: 70%;
-  }
-
-  .to-100\% {
-    --tw-gradient-to-position: 100%;
-  }
-
-  .to-\[-10pc\] {
-    --tw-gradient-to-position: -10pc;
-  }
-
-  .to-\[-10px\] {
-    --tw-gradient-to-position: -10px;
-  }
-
-  .to-\[-50px\] {
-    --tw-gradient-to-position: -50px;
   }
 
   .object-cover {
@@ -1713,12 +1584,6 @@
   }
 
   @media (width >= 48rem) {
-    .md\:mt-60 {
-      margin-top: calc(var(--spacing) * 60);
-    }
-  }
-
-  @media (width >= 48rem) {
     .md\:mr-\[14px\] {
       margin-right: 14px;
     }
@@ -1788,13 +1653,6 @@
   }
 
   @media (width >= 48rem) {
-    .md\:bg-gradient-to-br {
-      --tw-gradient-position: to bottom right in oklab;
-      background-image: linear-gradient(var(--tw-gradient-stops));
-    }
-  }
-
-  @media (width >= 48rem) {
     .md\:bg-linear-125 {
       --tw-gradient-position: 125deg in oklab;
       background-image: linear-gradient(var(--tw-gradient-stops));
@@ -1824,12 +1682,6 @@
   @media (width >= 64rem) {
     .lg\:mt-0 {
       margin-top: calc(var(--spacing) * 0);
-    }
-  }
-
-  @media (width >= 64rem) {
-    .lg\:mt-20 {
-      margin-top: calc(var(--spacing) * 20);
     }
   }
 
