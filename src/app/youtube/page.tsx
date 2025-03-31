@@ -1,3 +1,27 @@
+import Header from "@/components/ui/sections/header";
+// import BestQuality from "@/components/ui/sections/bestquality";
+// import DownloadFrom from "@/components/ui/sections/downloadfrom";
+// import HowitWorks from "@/components/ui/sections/howitworks";
+
 export default function Youtube() {
-  return <div>Youtube</div>;
+  return (
+    <div className="flex flex-col items-center bg-white">
+      <Header
+        platform="Youtube"
+        description={
+          <>
+            Download YouTube <br className="block md:hidden" /> videos and audio{" "}
+            <br className="block md:hidden" /> in mp3{" "}
+            <br className="hidden md:inline-flex" /> and mp4.
+          </>
+        }
+        bgColor={
+          "bg-linear-105 md:bg-linear-125 from-[#FF0000] from-20% to-[#E50000] to-85%"
+        }
+      />
+      {/* <HowitWorks />
+      <BestQuality />
+      <DownloadFrom /> */}
+    </div>
+  );
 }
