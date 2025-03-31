@@ -685,14 +685,6 @@
     width: 90%;
   }
 
-  .w-\[95\%\] {
-    width: 95%;
-  }
-
-  .w-\[full\] {
-    width: full;
-  }
-
   .w-full {
     width: 100%;
   }
@@ -783,6 +775,12 @@
     align-self: center;
   }
 
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .rounded {
     border-radius: .25rem;
   }
@@ -846,10 +844,6 @@
     background-color: red;
   }
 
-  .bg-\[\#\] {
-    background-color: # ;
-  }
-
   .bg-black {
     background-color: var(--color-black);
   }
@@ -907,36 +901,12 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .from-0\% {
-    --tw-gradient-from-position: 0%;
-  }
-
   .from-10\% {
     --tw-gradient-from-position: 10%;
   }
 
   .from-20\% {
     --tw-gradient-from-position: 20%;
-  }
-
-  .from-25\% {
-    --tw-gradient-from-position: 25%;
-  }
-
-  .from-30\% {
-    --tw-gradient-from-position: 30%;
-  }
-
-  .from-35\% {
-    --tw-gradient-from-position: 35%;
-  }
-
-  .from-40\% {
-    --tw-gradient-from-position: 40%;
-  }
-
-  .from-45\% {
-    --tw-gradient-from-position: 45%;
   }
 
   .via-\[\#EE2A7B\] {
@@ -964,36 +934,12 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .to-30\% {
-    --tw-gradient-to-position: 30%;
-  }
-
-  .to-50\% {
-    --tw-gradient-to-position: 50%;
-  }
-
-  .to-65\% {
-    --tw-gradient-to-position: 65%;
-  }
-
   .to-70\% {
     --tw-gradient-to-position: 70%;
   }
 
-  .to-80\% {
-    --tw-gradient-to-position: 80%;
-  }
-
   .to-85\% {
     --tw-gradient-to-position: 85%;
-  }
-
-  .to-90\% {
-    --tw-gradient-to-position: 90%;
-  }
-
-  .to-100\% {
-    --tw-gradient-to-position: 100%;
   }
 
   .object-cover {
@@ -1160,10 +1106,6 @@
     color: var(--color-black);
   }
 
-  .text-black\/7 {
-    color: color-mix(in oklab, var(--color-black) 7%, transparent);
-  }
-
   .text-black\/50 {
     color: color-mix(in oklab, var(--color-black) 50%, transparent);
   }
@@ -1294,12 +1236,6 @@
   @media (width >= 40rem) {
     .sm\:p-20 {
       padding: calc(var(--spacing) * 20);
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:my-0 {
-      margin-block: calc(var(--spacing) * 0);
     }
   }
 

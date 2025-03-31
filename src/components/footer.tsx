@@ -11,7 +11,7 @@ export default function Footer() {
       <ul className="font-medium mt-6 mb-2 flex flex-col md:flex-row items-center md:space-x-8 rtl:space-x-reverse md:border-0 ">
         <li>
           <a
-            href="#"
+            href="/"
             className="block py-2 px-3 font-normal text-black/75"
             aria-current="page"
           >
@@ -19,12 +19,18 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="#" className="block py-2 px-3 font-normal text-black/75 ">
+          <a
+            href="/youtube"
+            className="block py-2 px-3 font-normal text-black/75 "
+          >
             YouTube Downloader
           </a>
         </li>
         <li>
-          <a href="#" className="block py-2 px-3 font-normal text-black/75 ">
+          <a
+            href="tiktok"
+            className="block py-2 px-3 font-normal text-black/75 "
+          >
             TikTok Downloader
           </a>
         </li>
