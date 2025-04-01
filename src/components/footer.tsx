@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -10,47 +12,47 @@ export default function Footer() {
       </a>
       <ul className="font-medium mt-6 mb-2 flex flex-col md:flex-row items-center md:space-x-8 rtl:space-x-reverse md:border-0 ">
         <li>
-          <a
+          <Link
             href="/"
             className="block py-2 px-3 font-normal text-black/75"
             aria-current="page"
           >
             Instagram Downloader
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="/youtube"
             className="block py-2 px-3 font-normal text-black/75 "
           >
             YouTube Downloader
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="/tiktok"
             className="block py-2 px-3 font-normal text-black/75 "
           >
             TikTok Downloader
-          </a>
+          </Link>
         </li>
       </ul>
       <ul className="font-medium mt-2 md:mt-0 mb-6 flex flex-col md:flex-row items-center md:space-x-8 rtl:space-x-reverse md:border-0 ">
         {" "}
         <li>
-          <a href="#" className="block py-2 px-3 font-normal text-black/75 ">
+          <Link href="#" className="block py-2 px-3 font-normal text-black/75 ">
             Terms and Conditions
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="block py-2 px-3 font-normal text-black/75 ">
+          <Link href="/" className="block py-2 px-3 font-normal text-black/75 ">
             Contact Us
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="block py-2 px-3 font-normal text-black/75 ">
+          <Link href="/" className="block py-2 px-3 font-normal text-black/75 ">
             Privacy Policy
-          </a>
+          </Link>
         </li>
       </ul>
       <p>Copyright {currentYear} | All Rights Reserved</p>
