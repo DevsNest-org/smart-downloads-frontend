@@ -1,6 +1,6 @@
 import Header from "@/components/ui/sections/header";
-// import BestQuality from "@/components/ui/sections/bestquality";
-// import DownloadFrom from "@/components/ui/sections/downloadfrom";
+import BestQuality from "@/components/ui/sections/bestquality";
+import DownloadFrom from "@/components/ui/sections/downloadfrom";
 import HowitWorks from "@/components/ui/sections/howitworks";
 
 export default function Tiktok() {
@@ -25,8 +25,15 @@ export default function Tiktok() {
           " bg-linear-105 md:bg-linear-135 from-[#FF0050] from-25% to-[#00F2EA] to-75%"
         }
       />
-      {/* <BestQuality /> */}
-      {/* <DownloadFrom /> */}
+      <BestQuality primaryColor={"text-black"} />
+      <DownloadFrom
+        platform1={"Youtube"}
+        platform1Color={"[#FF0000]"}
+        platform2={"Instagram"}
+        platform2Color={"purple"}
+        platform1Icon={"/icons/arrow-yt.png"}
+        platform2Icon={"/icons/arrow-insta.png"}
+      />
     </div>
   );
 }
