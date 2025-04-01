@@ -1,5 +1,5 @@
 import Header from "@/components/ui/sections/header";
-// import BestQuality from "@/components/ui/sections/bestquality";
+import BestQuality from "@/components/ui/sections/bestquality";
 // import DownloadFrom from "@/components/ui/sections/downloadfrom";
 import HowitWorks from "@/components/ui/sections/howitworks";
 
@@ -25,7 +25,7 @@ export default function Youtube() {
           " bg-linear-105 md:bg-linear-135 from-[#FF0000] from-10% to-[#070707] to-70%"
         }
       />
-      {/* <BestQuality /> */}
+      <BestQuality primaryColor={"text-[#FF0000]"} />
       {/* <DownloadFrom /> */}
     </div>
   );

@@ -1119,6 +1119,10 @@
     color: red;
   }
 
+  .text-\[purple\] {
+    color: purple;
+  }
+
   .text-black {
     color: var(--color-black);
   }
