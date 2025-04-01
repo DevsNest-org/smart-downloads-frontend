@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.
  * This devtool is neither made for production nor for readable output files.
@@ -26,3 +27,13 @@ eval(__webpack_require__.ts("\n    (window.__NEXT_P = window.__NEXT_P || []).pus
 /******/ _N_E = __webpack_exports__;
 /******/ }
 ]);
+=======
+__turbopack_load_page_chunks__("/_app", [
+  "static/chunks/[root of the server]__3a40d6d2._.js",
+  "static/chunks/node_modules_react-dom_82bb97c6._.js",
+  "static/chunks/node_modules_beb00741._.js",
+  "static/chunks/[root of the server]__49fd8634._.js",
+  "static/chunks/pages__app_5771e187._.js",
+  "static/chunks/pages__app_6a98ce7c._.js"
+])
+>>>>>>> dev

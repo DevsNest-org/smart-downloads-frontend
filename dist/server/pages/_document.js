@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use strict";
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.
@@ -64,3 +65,11 @@ var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor
 module.exports = __webpack_exports__;
 
 })();
+=======
+const CHUNK_PUBLIC_PATH = "server/pages/_document.js";
+const runtime = require("../chunks/ssr/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_bf671b14._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__e237d7a2._.js");
+runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/document.js [ssr] (ecmascript)", CHUNK_PUBLIC_PATH);
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/document.js [ssr] (ecmascript)", CHUNK_PUBLIC_PATH).exports;
+>>>>>>> dev

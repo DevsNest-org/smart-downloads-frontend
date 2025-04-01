@@ -1,8 +1,41 @@
+import BestQuality from "@/components/ui/sections/bestquality";
+import DownloadFrom from "@/components/ui/sections/downloadfrom";
+import Header from "@/components/ui/sections/header";
+import HowitWorks from "@/components/ui/sections/howitworks";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1>The evolution of DevsNest begins</h1>
+    <div className="flex flex-col items-center bg-white">
+      <Header
+        platform="Instagram"
+        description={
+          <>
+            Download Instagra <br className="block md:hidden" /> videos,
+            pictures, reels, <br className="hidden md:inline-flex" /> IGTV{" "}
+            <br className="block md:hidden" /> and carousel.
+          </>
+        }
+        bgColor={
+          "bg-linear-105 md:bg-linear-125 from-[#F9CE34] from-10% via-[#EE2A7B] via-40%  to-[#6228D7] to-70%"
+        }
+      />
+      <HowitWorks
+        primaryColor={"text-purple"}
+        bgColor={
+          " bg-linear-105 md:bg-linear-125 from-[#EE2A7B] from-10% to-[#6228D7] to-70%"
+        }
+      />
+      <BestQuality primaryColor={"text-purple"} />
+      <DownloadFrom
+        link1={"/tiktok"}
+        platform1={"TikTok"}
+        platform1Color={"black"}
+        platform1Icon={"/icons/arrow-tiktok.png"}
+        link2={"/youtube"}
+        platform2={"YouTube"}
+        platform2Color={"[#FF0000]"}
+        platform2Icon={"/icons/arrow-yt.png"}
+      />
     </div>
   );
 }
