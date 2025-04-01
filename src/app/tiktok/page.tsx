@@ -1,7 +1,7 @@
 import Header from "@/components/ui/sections/header";
 // import BestQuality from "@/components/ui/sections/bestquality";
 // import DownloadFrom from "@/components/ui/sections/downloadfrom";
-// import HowitWorks from "@/components/ui/sections/howitworks";
+import HowitWorks from "@/components/ui/sections/howitworks";
 
 export default function Tiktok() {
   return (
@@ -19,9 +19,14 @@ export default function Tiktok() {
           "bg-linear-105 md:bg-linear-125 from-[#FF0050] from-20% to-[#00F2EA] to-85%"
         }
       />
-      {/* <HowitWorks />
-      <BestQuality />
-      <DownloadFrom /> */}
+      <HowitWorks
+        primaryColor={"text-black"}
+        bgColor={
+          " bg-linear-105 md:bg-linear-135 from-[#FF0050] from-25% to-[#00F2EA] to-75%"
+        }
+      />
+      {/* <BestQuality /> */}
+      {/* <DownloadFrom /> */}
     </div>
   );
 }
