@@ -1235,10 +1235,6 @@
     --tw-gradient-from-position: 25%;
   }
 
-  .from-30\% {
-    --tw-gradient-from-position: 30%;
-  }
-
   .via-\[\#EE2A7B\] {
     --tw-gradient-via: #ee2a7b;
     --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
@@ -1269,24 +1265,12 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .to-7\% {
-    --tw-gradient-to-position: 7%;
-  }
-
-  .to-60\% {
-    --tw-gradient-to-position: 60%;
-  }
-
   .to-70\% {
     --tw-gradient-to-position: 70%;
   }
 
   .to-75\% {
     --tw-gradient-to-position: 75%;
-  }
-
-  .to-80\% {
-    --tw-gradient-to-position: 80%;
   }
 
   .to-85\% {
@@ -1451,10 +1435,6 @@
 
   .text-\[\#FF0000\] {
     color: red;
-  }
-
-  .text-\[purple\] {
-    color: purple;
   }
 
   .text-black {
@@ -1691,13 +1671,6 @@
   @media (width >= 48rem) {
     .md\:bg-linear-135 {
       --tw-gradient-position: 135deg in oklab;
-      background-image: linear-gradient(var(--tw-gradient-stops));
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:bg-linear-145 {
-      --tw-gradient-position: 145deg in oklab;
       background-image: linear-gradient(var(--tw-gradient-stops));
     }
   }

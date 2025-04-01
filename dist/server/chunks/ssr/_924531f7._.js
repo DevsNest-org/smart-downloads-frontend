@@ -359,7 +359,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
 ;
 ;
-function DownloadFrom() {
+function DownloadFrom({ platform1, platform1Color, platform2, platform2Color, platform1Icon, platform2Icon }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: " flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-250 my-20 md:mt-0 lg:my-0 ",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -376,32 +376,32 @@ function DownloadFrom() {
                                     className: " hidden md:inline-flex "
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                                    lineNumber: 9,
+                                    lineNumber: 16,
                                     columnNumber: 27
                                 }, this),
                                 " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-[#1E1E1E]",
-                                    children: "TikTok"
+                                    className: `${platform1Color}`,
+                                    children: platform1
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                                    lineNumber: 10,
+                                    lineNumber: 17,
                                     columnNumber: 13
                                 }, this),
                                 " and",
                                 " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-[#FF0000]",
-                                    children: "YouTube"
+                                    className: `${platform2Color}`,
+                                    children: platform2
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                                    lineNumber: 11,
+                                    lineNumber: 18,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                            lineNumber: 8,
+                            lineNumber: 15,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -413,20 +413,20 @@ function DownloadFrom() {
                                     className: " hidden md:inline-flex "
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                                    lineNumber: 15,
+                                    lineNumber: 22,
                                     columnNumber: 13
                                 }, this),
                                 " Youtube"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                            lineNumber: 13,
+                            lineNumber: 20,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                    lineNumber: 7,
+                    lineNumber: 14,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -441,7 +441,7 @@ function DownloadFrom() {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "w-12",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "icons/arrow-tiktok.png",
+                                            src: platform1Icon,
                                             alt: "Profile Picture",
                                             width: 500,
                                             height: 400,
@@ -449,17 +449,17 @@ function DownloadFrom() {
                                             className: "object-cover" // Ensures proper scaling
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                                            lineNumber: 25,
+                                            lineNumber: 32,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                                        lineNumber: 24,
+                                        lineNumber: 31,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                                    lineNumber: 23,
+                                    lineNumber: 30,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -467,13 +467,13 @@ function DownloadFrom() {
                                     children: "TikTok Downloader"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 42,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                            lineNumber: 19,
+                            lineNumber: 26,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -485,7 +485,7 @@ function DownloadFrom() {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "w-12",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "icons/arrow-yt.png",
+                                            src: platform2Icon,
                                             alt: "Profile Picture",
                                             width: 500,
                                             height: 400,
@@ -493,17 +493,17 @@ function DownloadFrom() {
                                             className: "object-cover" // Ensures proper scaling
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                                            lineNumber: 45,
+                                            lineNumber: 52,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                                        lineNumber: 44,
+                                        lineNumber: 51,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 50,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -511,30 +511,30 @@ function DownloadFrom() {
                                     children: "TikTok Downloader"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                                    lineNumber: 55,
+                                    lineNumber: 62,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                            lineNumber: 39,
+                            lineNumber: 46,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-                    lineNumber: 18,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-            lineNumber: 6,
+            lineNumber: 13,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
-        lineNumber: 5,
+        lineNumber: 12,
         columnNumber: 5
     }, this);
 }
@@ -1056,7 +1056,14 @@ function Home() {
                 lineNumber: 28,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$sections$2f$downloadfrom$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$sections$2f$downloadfrom$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                platform1: "TikTok",
+                platform1Color: "text-[#1E1E1E]",
+                platform2: "YouTube",
+                platform2Color: "text-[#FF0000]",
+                platform1Icon: "icons/arrow-tiktok.png",
+                platform2Icon: "icons/arrow-yt.png"
+            }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
                 lineNumber: 29,
                 columnNumber: 7

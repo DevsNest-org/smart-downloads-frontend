@@ -26,7 +26,14 @@ export default function Home() {
         }
       />
       <BestQuality primaryColor={"text-purple"} />
-      <DownloadFrom />
+      <DownloadFrom
+        platform1={"TikTok"}
+        platform1Color={"text-[#1E1E1E]"}
+        platform2={"YouTube"}
+        platform2Color={"text-[#FF0000]"}
+        platform1Icon={"icons/arrow-tiktok.png"}
+        platform2Icon={"icons/arrow-yt.png"}
+      />
     </div>
   );
 }
