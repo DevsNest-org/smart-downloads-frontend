@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-export default function BestQuality() {
+export default function BestQuality({ primaryColor }: any) {
   return (
     <div className=" flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-300 mt-20 md:mt-0 ">
       <div className=" h-auto w-full flex flex-col items-center">
-        <h1 className=" text-4xl text-center font-semibold text-purple">
+        <h1 className={` text-4xl text-center font-semibold ${primaryColor}`}>
           Only the best <br className="inline-flex md:hidden" /> Quality
         </h1>
         <p className=" text-black/70 text-center mt-4 ">
@@ -26,7 +26,7 @@ export default function BestQuality() {
                 />
               </div>
             </div>
-            <h1 className=" text-lg font-normal text-purple mt-10 ">
+            <h1 className={` text-lg font-normal ${primaryColor} mt-10 `}>
               Fast and Quick
             </h1>
             <p className=" text-black/70 text-sm text-center mt-2 ">
@@ -46,7 +46,9 @@ export default function BestQuality() {
                 />
               </div>
             </div>
-            <h1 className=" text-lg` font-normal text-purple mt-10 ">Secure</h1>
+            <h1 className={` text-lg font-normal ${primaryColor} mt-10 `}>
+              Secure
+            </h1>
             <p className=" text-black/70 text-sm text-center mt-2 ">
               Your privacy is <br /> protected and secure
             </p>
@@ -64,7 +66,7 @@ export default function BestQuality() {
                 />
               </div>
             </div>
-            <h1 className=" text-lg` font-normal text-purple mt-10 ">
+            <h1 className={` text-lg font-normal ${primaryColor} mt-10 `}>
               Top Quality
             </h1>
             <p className=" text-black/70 text-sm text-center mt-2 ">
@@ -84,7 +86,7 @@ export default function BestQuality() {
                 />
               </div>
             </div>
-            <h1 className=" text-lg` font-normal text-purple mt-10 ">
+            <h1 className={` text-lg font-normal ${primaryColor} mt-10 `}>
               Simply and Easy
             </h1>
             <p className=" text-black/70 text-sm text-center mt-2 ">

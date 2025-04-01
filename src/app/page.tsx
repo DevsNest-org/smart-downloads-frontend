@@ -25,7 +25,7 @@ export default function Home() {
           " bg-linear-105 md:bg-linear-125 from-[#EE2A7B] from-10% to-[#6228D7] to-70%"
         }
       />
-      <BestQuality />
+      <BestQuality primaryColor={"text-purple"} />
       <DownloadFrom />
     </div>
   );
