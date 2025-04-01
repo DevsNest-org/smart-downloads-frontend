@@ -28,7 +28,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            href="tiktok"
+            href="/tiktok"
             className="block py-2 px-3 font-normal text-black/75 "
           >
             TikTok Downloader
