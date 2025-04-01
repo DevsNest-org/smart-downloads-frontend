@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useEffect } from "react";
 
 interface MobileMenuProps {
@@ -44,30 +45,36 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
         <ul className="font-medium flex flex-col p-4 mt-4 text-black">
           <li
             className={`transition-all duration-500 ease-in-out ${
-              isOpen ? "translate-x-0 opacity-100 delay-200" : "translate-x-full opacity-0"
+              isOpen
+                ? "translate-x-0 opacity-100 delay-200"
+                : "translate-x-full opacity-0"
             }`}
           >
-            <a href="/" className="block py-2 px-3 text-black">
+            <Link href="/" className="block py-2 px-3 text-black">
               Instagram
-            </a>
+            </Link>
           </li>
           <li
             className={`transition-all duration-500 ease-in-out ${
-              isOpen ? "translate-x-0 opacity-100 delay-300" : "translate-x-full opacity-0"
+              isOpen
+                ? "translate-x-0 opacity-100 delay-300"
+                : "translate-x-full opacity-0"
             }`}
           >
-            <a href="/youtube" className="block py-2 px-3 text-black">
+            <Link href="/youtube" className="block py-2 px-3 text-black">
               YouTube
-            </a>
+            </Link>
           </li>
           <li
             className={`transition-all duration-500 ease-in-out ${
-              isOpen ? "translate-x-0 opacity-100 delay-400" : "translate-x-full opacity-0"
+              isOpen
+                ? "translate-x-0 opacity-100 delay-400"
+                : "translate-x-full opacity-0"
             }`}
           >
-            <a href="/tiktok" className="block py-2 px-3 text-black">
+            <Link href="/tiktok" className="block py-2 px-3 text-black">
               TikTok
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
