@@ -52,7 +52,7 @@ export default function HowitWorks({ primaryColor, bgColor }: any) {
                   Paste
                   <div className="absolute bottom-[-22px] right-5.5 w-10 ">
                     <Image
-                      src="icons/select-hand-guesture.png"
+                      src="/icons/select-hand-guesture.png"
                       alt="Profile Picture"
                       width={500}
                       height={400}
@@ -80,7 +80,7 @@ export default function HowitWorks({ primaryColor, bgColor }: any) {
                 Download
                 <div className="absolute bottom-[-22px] right-9.5 w-10 ">
                   <Image
-                    src="icons/select-hand-guesture.png"
+                    src="/icons/select-hand-guesture.png"
                     alt="Profile Picture"
                     width={500}
                     height={400}

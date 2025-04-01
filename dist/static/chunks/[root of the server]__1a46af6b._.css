@@ -1247,6 +1247,11 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
+  .to-\[\#070707\] {
+    --tw-gradient-to: #070707;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
   .to-\[\#E50000\] {
     --tw-gradient-to: #e50000;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -1418,6 +1423,10 @@
 
   .text-\[\#FF0000\] {
     color: red;
+  }
+
+  .text-\[purple\] {
+    color: purple;
   }
 
   .text-black {
@@ -1647,6 +1656,20 @@
   @media (width >= 48rem) {
     .md\:bg-linear-125 {
       --tw-gradient-position: 125deg in oklab;
+      background-image: linear-gradient(var(--tw-gradient-stops));
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:bg-linear-135 {
+      --tw-gradient-position: 135deg in oklab;
+      background-image: linear-gradient(var(--tw-gradient-stops));
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:bg-linear-145 {
+      --tw-gradient-position: 145deg in oklab;
       background-image: linear-gradient(var(--tw-gradient-stops));
     }
   }

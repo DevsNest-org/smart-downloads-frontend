@@ -1,7 +1,7 @@
 import Header from "@/components/ui/sections/header";
 // import BestQuality from "@/components/ui/sections/bestquality";
 // import DownloadFrom from "@/components/ui/sections/downloadfrom";
-// import HowitWorks from "@/components/ui/sections/howitworks";
+import HowitWorks from "@/components/ui/sections/howitworks";
 
 export default function Youtube() {
   return (
@@ -19,9 +19,14 @@ export default function Youtube() {
           "bg-linear-105 md:bg-linear-125 from-[#FF0000] from-20% to-[#E50000] to-85%"
         }
       />
-      {/* <HowitWorks />
-      <BestQuality />
-      <DownloadFrom /> */}
+      <HowitWorks
+        primaryColor={"text-[#FF0000]"}
+        bgColor={
+          " bg-linear-105 md:bg-linear-135 from-[#FF0000] from-10% to-[#070707] to-70%"
+        }
+      />
+      {/* <BestQuality /> */}
+      {/* <DownloadFrom /> */}
     </div>
   );
 }
