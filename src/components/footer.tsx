@@ -5,11 +5,14 @@ export default function Footer() {
 
   return (
     <div className=" flex flex-col items-center h-auto w-full py-16 text-black/75 bg-[#D9D9D9] ">
-      <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+      <Link
+        href="/"
+        className="flex items-center space-x-3 rtl:space-x-reverse"
+      >
         <span className="self-center text-xl font-normal whitespace-nowrap">
           Devsnest
         </span>
-      </a>
+      </Link>
       <ul className="font-medium mt-6 mb-2 flex flex-col md:flex-row items-center md:space-x-8 rtl:space-x-reverse md:border-0 ">
         <li>
           <Link
