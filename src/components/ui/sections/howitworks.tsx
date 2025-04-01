@@ -1,6 +1,11 @@
 import Image from "next/image";
 
-export default function HowitWorks({ primaryColor, bgColor }: any) {
+interface props {
+  primaryColor: string;
+  bgColor: string;
+}
+
+export default function HowitWorks({ primaryColor, bgColor }: props) {
   return (
     <div className=" flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-300 mt-20 md:mt-20 ">
       <div className=" h-auto w-full flex flex-col items-center">

@@ -1,7 +1,13 @@
 "use client";
 
 import Lenis from "lenis";
-import { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  ReactNode,
+} from "react";
 
 // Define the type for the context
 type SmoothScrollContextType = Lenis | null;
@@ -44,7 +50,7 @@ export default function ScrollContext({ children }: ScrollContextProps) {
         lenisRef.destroy();
       }
     };
-  }, []);
+  }, [lenisRef, rafState]);
 
   return (
     <SmoothScrollContext.Provider value={lenisRef}>

@@ -1,6 +1,10 @@
 import Image from "next/image";
 
-export default function BestQuality({ primaryColor }: any) {
+interface props {
+  primaryColor: string;
+}
+
+export default function BestQuality({ primaryColor }: props) {
   return (
     <div className=" flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-300 mt-20 md:mt-0 ">
       <div className=" h-auto w-full flex flex-col items-center">

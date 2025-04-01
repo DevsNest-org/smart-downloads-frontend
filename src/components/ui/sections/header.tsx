@@ -1,4 +1,12 @@
-export default function Header({ platform, description, bgColor }: any) {
+import { JSX } from "react";
+
+interface props {
+  platform: string;
+  description:  JSX.Element;
+  bgColor: string;
+}
+
+export default function Header({ platform, description, bgColor }: props) {
   return (
     <div
       className={` flex flex-col items-center justify-center  h-[90dvh] w-[90%] rounded-[44px] text-center ${bgColor} `}

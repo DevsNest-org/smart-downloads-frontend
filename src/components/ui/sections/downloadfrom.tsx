@@ -1,5 +1,16 @@
 import Image from "next/image";
 
+interface props {
+  link1: string;
+  platform1: string;
+  platform1Color: string;
+  platform1Icon: string;
+  link2: string;
+  platform2: string;
+  platform2Color: string;
+  platform2Icon: string;
+}
+
 export default function DownloadFrom({
   link1,
   platform1,
@@ -9,7 +20,7 @@ export default function DownloadFrom({
   platform2,
   platform2Color,
   platform2Icon,
-}: any) {
+}: props) {
   return (
     <div className=" flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-250 my-20 md:mt-0 lg:my-0 ">
       <div className=" h-auto w-full flex flex-col lg:flex-row justify-between ">
