@@ -1,11 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { Dispatch, SetStateAction } from "react";
 import { IoMenu } from "react-icons/io5";
 
 interface state {
-  isMobileMenuOpen: String;
-  setIsMobileMenuOpen: String;
+  isMobileMenuOpen: boolean;
+  setIsMobileMenuOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 export default function Navbar({
