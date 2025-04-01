@@ -1,7 +1,7 @@
 export default function Header({ platform, description, bgColor }: any) {
   return (
     <div
-      className={` flex flex-col items-center justify-center  h-[90vh] w-[90%] rounded-[44px] text-center ${bgColor} `}
+      className={` flex flex-col items-center justify-center  h-[90dvh] w-[90%] rounded-[44px] text-center ${bgColor} `}
     >
       <h1 className="text-5xl md:text-5xl font-bold leading-18">
         Download <br className="block md:hidden" /> from{" "}
