@@ -381,7 +381,7 @@ function DownloadFrom({ platform1, platform1Color, platform2, platform2Color, pl
                                 }, this),
                                 " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: `${platform1Color}`,
+                                    className: `text-${platform1Color}`,
                                     children: platform1
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
@@ -391,7 +391,7 @@ function DownloadFrom({ platform1, platform1Color, platform2, platform2Color, pl
                                 " and",
                                 " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: `${platform2Color}`,
+                                    className: `text-${platform2Color}`,
                                     children: platform2
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
@@ -434,7 +434,7 @@ function DownloadFrom({ platform1, platform1Color, platform2, platform2Color, pl
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "#",
-                            className: " relative h-45 w-full flex flex-col justify-end rounded-[20px] bg-black",
+                            className: ` relative h-45 w-full flex flex-col justify-end rounded-[20px] bg-${platform1Color}`,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "absolute top-4 right-4 flex flex-col items-center justify-center  h-10 w-10 rounded-full bg-white ",
@@ -464,8 +464,11 @@ function DownloadFrom({ platform1, platform1Color, platform2, platform2Color, pl
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                     className: "absolute bottom-5 left-5 text-xl font-medium ",
-                                    children: "TikTok Downloader"
-                                }, void 0, false, {
+                                    children: [
+                                        platform1,
+                                        " Downloader"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
                                     lineNumber: 42,
                                     columnNumber: 13
@@ -478,7 +481,7 @@ function DownloadFrom({ platform1, platform1Color, platform2, platform2Color, pl
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "#",
-                            className: " relative h-45 w-full flex flex-col justify-end rounded-[20px] mt-6 bg-[#FF0000]",
+                            className: ` relative h-45 w-full flex flex-col justify-end rounded-[20px] mt-6 bg-${platform2Color}`,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "absolute top-4 right-4 flex flex-col items-center justify-center  h-10 w-10 rounded-full bg-white ",
@@ -508,8 +511,11 @@ function DownloadFrom({ platform1, platform1Color, platform2, platform2Color, pl
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                     className: "absolute bottom-5 left-5 text-white text-xl font-medium ",
-                                    children: "TikTok Downloader"
-                                }, void 0, false, {
+                                    children: [
+                                        platform2,
+                                        " Downloader"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/ui/sections/downloadfrom.tsx",
                                     lineNumber: 62,
                                     columnNumber: 13
@@ -1058,11 +1064,11 @@ function Home() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$sections$2f$downloadfrom$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 platform1: "TikTok",
-                platform1Color: "text-[#1E1E1E]",
+                platform1Color: "black",
                 platform2: "YouTube",
-                platform2Color: "text-[#FF0000]",
-                platform1Icon: "icons/arrow-tiktok.png",
-                platform2Icon: "icons/arrow-yt.png"
+                platform2Color: "[#FF0000]",
+                platform1Icon: "/icons/arrow-tiktok.png",
+                platform2Icon: "/icons/arrow-yt.png"
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
                 lineNumber: 29,

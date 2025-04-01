@@ -14,8 +14,8 @@ export default function DownloadFrom({
         <div className=" w-full flex flex-col">
           <h1 className=" text-4xl font-semibold text-[#1E1E1E]/60">
             Download from <br className=" hidden md:inline-flex " />{" "}
-            <span className={`${platform1Color}`}>{ platform1 }</span> and{" "}
-            <span className={`${platform2Color}`}>{ platform2 }</span>
+            <span className={`text-${platform1Color}`}>{ platform1 }</span> and{" "}
+            <span className={`text-${platform2Color}`}>{ platform2 }</span>
           </h1>
           <p className=" text-black/70 mt-4 ">
             Download video and audio files from Tiktok and{" "}
@@ -25,7 +25,7 @@ export default function DownloadFrom({
         <div className=" w-full flex flex-col mt-12 lg:mt-0 ">
           <a
             href="#"
-            className=" relative h-45 w-full flex flex-col justify-end rounded-[20px] bg-black"
+            className={` relative h-45 w-full flex flex-col justify-end rounded-[20px] bg-${platform1Color}`}
           >
             <div className="absolute top-4 right-4 flex flex-col items-center justify-center  h-10 w-10 rounded-full bg-white ">
               <div className="w-12">
@@ -40,12 +40,12 @@ export default function DownloadFrom({
               </div>
             </div>
             <h1 className="absolute bottom-5 left-5 text-xl font-medium ">
-              TikTok Downloader
+              {platform1} Downloader
             </h1>
           </a>
           <a
             href="#"
-            className=" relative h-45 w-full flex flex-col justify-end rounded-[20px] mt-6 bg-[#FF0000]"
+            className={` relative h-45 w-full flex flex-col justify-end rounded-[20px] mt-6 bg-${platform2Color}`}
           >
             <div className="absolute top-4 right-4 flex flex-col items-center justify-center  h-10 w-10 rounded-full bg-white ">
               <div className="w-12">
@@ -60,7 +60,7 @@ export default function DownloadFrom({
               </div>
             </div>
             <h1 className="absolute bottom-5 left-5 text-white text-xl font-medium ">
-              TikTok Downloader
+              {platform2} Downloader
             </h1>
           </a>
         </div>

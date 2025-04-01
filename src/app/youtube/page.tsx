@@ -1,6 +1,6 @@
 import Header from "@/components/ui/sections/header";
 import BestQuality from "@/components/ui/sections/bestquality";
-// import DownloadFrom from "@/components/ui/sections/downloadfrom";
+import DownloadFrom from "@/components/ui/sections/downloadfrom";
 import HowitWorks from "@/components/ui/sections/howitworks";
 
 export default function Youtube() {
@@ -26,7 +26,14 @@ export default function Youtube() {
         }
       />
       <BestQuality primaryColor={"text-[#FF0000]"} />
-      {/* <DownloadFrom /> */}
+      <DownloadFrom
+        platform1={"TikTok"}
+        platform1Color={"black"}
+        platform2={"Instagram"}
+        platform2Color={"purple"}
+        platform1Icon={"/icons/arrow-tiktok.png"}
+        platform2Icon={"/icons/arrow-insta.png"}
+      />{" "}
     </div>
   );
 }
