@@ -27,11 +27,13 @@ export default function Youtube() {
       />
       <BestQuality primaryColor={"text-[#FF0000]"} />
       <DownloadFrom
+        link1={"/tiktok"}
         platform1={"TikTok"}
         platform1Color={"black"}
+        platform1Icon={"/icons/arrow-tiktok.png"}
+        link2={"/"}
         platform2={"Instagram"}
         platform2Color={"purple"}
-        platform1Icon={"/icons/arrow-tiktok.png"}
         platform2Icon={"/icons/arrow-insta.png"}
       />{" "}
     </div>

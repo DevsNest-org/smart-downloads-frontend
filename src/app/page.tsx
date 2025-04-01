@@ -27,11 +27,13 @@ export default function Home() {
       />
       <BestQuality primaryColor={"text-purple"} />
       <DownloadFrom
+        link1={"/tiktok"}
         platform1={"TikTok"}
         platform1Color={"black"}
+        platform1Icon={"/icons/arrow-tiktok.png"}
+        link2={"/youtube"}
         platform2={"YouTube"}
         platform2Color={"[#FF0000]"}
-        platform1Icon={"/icons/arrow-tiktok.png"}
         platform2Icon={"/icons/arrow-yt.png"}
       />
     </div>
