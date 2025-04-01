@@ -19,7 +19,12 @@ export default function Home() {
           "bg-linear-105 md:bg-linear-125 from-[#F9CE34] from-10% via-[#EE2A7B] via-40%  to-[#6228D7] to-70%"
         }
       />
-      <HowitWorks />
+      <HowitWorks
+        primaryColor={"text-purple"}
+        bgColor={
+          " bg-linear-105 md:bg-linear-125 from-[#EE2A7B] from-10% to-[#6228D7] to-70%"
+        }
+      />
       <BestQuality />
       <DownloadFrom />
     </div>

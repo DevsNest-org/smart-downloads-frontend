@@ -662,14 +662,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
 ;
 ;
-function HowitWorks() {
+function HowitWorks({ primaryColor, bgColor }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: " flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-300 mt-20 md:mt-20 ",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: " h-auto w-full flex flex-col items-center",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                    className: " text-4xl font-semibold text-purple",
+                    className: ` text-4xl font-semibold ${primaryColor} `,
                     children: "How it works"
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
@@ -684,7 +684,7 @@ function HowitWorks() {
                             className: " inline-flex md:hidden"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                            lineNumber: 9,
+                            lineNumber: 11,
                             columnNumber: 40
                         }, this),
                         " ",
@@ -693,7 +693,7 @@ function HowitWorks() {
                             className: "hidden md:inline-flex"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                            lineNumber: 10,
+                            lineNumber: 12,
                             columnNumber: 33
                         }, this),
                         " reels, and",
@@ -701,14 +701,14 @@ function HowitWorks() {
                             className: " inline-flex md:hidden"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                            lineNumber: 12,
+                            lineNumber: 14,
                             columnNumber: 11
                         }, this),
                         "pictures from Instagram"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                    lineNumber: 8,
+                    lineNumber: 10,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -725,7 +725,7 @@ function HowitWorks() {
                                             children: "1"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                            lineNumber: 18,
+                                            lineNumber: 20,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -733,7 +733,7 @@ function HowitWorks() {
                                             children: "Copied"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                            lineNumber: 21,
+                                            lineNumber: 23,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -743,26 +743,26 @@ function HowitWorks() {
                                                 children: "www.instagram.com/p/Dvrmr"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                                lineNumber: 25,
+                                                lineNumber: 27,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                            lineNumber: 24,
+                                            lineNumber: 26,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                    lineNumber: 17,
+                                    lineNumber: 19,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                    className: " text-lg font-normal text-purple mt-10 ",
+                                    className: ` text-lg font-normal ${primaryColor}  mt-10 `,
                                     children: "Copy the URL"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                    lineNumber: 30,
+                                    lineNumber: 32,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -771,20 +771,20 @@ function HowitWorks() {
                                         "Open your Instagram app or website, ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                            lineNumber: 34,
+                                            lineNumber: 36,
                                             columnNumber: 51
                                         }, this),
                                         " copy the URL or Share link of the media"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                    lineNumber: 33,
+                                    lineNumber: 35,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                            lineNumber: 16,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -798,7 +798,7 @@ function HowitWorks() {
                                             children: "2"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                            lineNumber: 40,
+                                            lineNumber: 42,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -809,11 +809,11 @@ function HowitWorks() {
                                                     children: "vrmr"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                                    lineNumber: 44,
+                                                    lineNumber: 46,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "relative py-4 px-8 text-xl text-white font-medium rounded-[25px] bg-linear-105 md:bg-linear-125 from-[#EE2A7B] from-10% to-[#6228D7] to-70%",
+                                                    className: `relative py-4 px-8 text-xl text-white font-medium rounded-[25px] ${bgColor}`,
                                                     children: [
                                                         "Paste",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -827,38 +827,38 @@ function HowitWorks() {
                                                                 className: "object-cover" // Ensures proper scaling
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                                                lineNumber: 50,
+                                                                lineNumber: 54,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                                            lineNumber: 49,
+                                                            lineNumber: 53,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                                    lineNumber: 47,
+                                                    lineNumber: 49,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                            lineNumber: 43,
+                                            lineNumber: 45,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                    lineNumber: 39,
+                                    lineNumber: 41,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                    className: " text-lg` font-normal text-purple mt-10 ",
+                                    className: ` text-lg font-normal ${primaryColor}  mt-10 `,
                                     children: "Paste the link"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 66,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -867,20 +867,20 @@ function HowitWorks() {
                                         "Come to the webapp, paste the link and ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 70,
                                             columnNumber: 54
                                         }, this),
                                         " click the Download button"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 69,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                            lineNumber: 38,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -894,7 +894,7 @@ function HowitWorks() {
                                             children: "3"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 76,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -912,32 +912,32 @@ function HowitWorks() {
                                                         className: "object-cover" // Ensures proper scaling
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                                        lineNumber: 78,
+                                                        lineNumber: 82,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                                    lineNumber: 77,
+                                                    lineNumber: 81,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 79,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 75,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                    className: " text-lg` font-normal text-purple mt-10 ",
+                                    className: ` text-lg font-normal ${primaryColor}  mt-10 `,
                                     children: "Download"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                    lineNumber: 89,
+                                    lineNumber: 93,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -946,26 +946,26 @@ function HowitWorks() {
                                         "Choose your preferred quality type and ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                            lineNumber: 93,
+                                            lineNumber: 97,
                                             columnNumber: 54
                                         }, this),
                                         " download into your device"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                                    lineNumber: 92,
+                                    lineNumber: 96,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                            lineNumber: 70,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ui/sections/howitworks.tsx",
-                    lineNumber: 15,
+                    lineNumber: 17,
                     columnNumber: 9
                 }, this)
             ]
@@ -1041,19 +1041,22 @@ function Home() {
                 lineNumber: 9,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$sections$2f$howitworks$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$sections$2f$howitworks$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                primaryColor: "text-purple",
+                bgColor: " bg-linear-105 md:bg-linear-125 from-[#EE2A7B] from-10% to-[#6228D7] to-70%"
+            }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
                 lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$sections$2f$bestquality$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 23,
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$sections$2f$downloadfrom$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 24,
+                lineNumber: 29,
                 columnNumber: 7
             }, this)
         ]

@@ -1,10 +1,12 @@
 import Image from "next/image";
 
-export default function HowitWorks() {
+export default function HowitWorks({ primaryColor, bgColor }: any) {
   return (
     <div className=" flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-300 mt-20 md:mt-20 ">
       <div className=" h-auto w-full flex flex-col items-center">
-        <h1 className=" text-4xl font-semibold text-purple">How it works</h1>
+        <h1 className={` text-4xl font-semibold ${primaryColor} `}>
+          How it works
+        </h1>
         <p className=" text-black/70 text-center mt-2 ">
           Follow these simple steps to <br className=" inline-flex md:hidden" />{" "}
           download your videos, <br className="hidden md:inline-flex" /> reels,
@@ -27,7 +29,7 @@ export default function HowitWorks() {
                 </h1>
               </div>
             </div>
-            <h1 className=" text-lg font-normal text-purple mt-10 ">
+            <h1 className={` text-lg font-normal ${primaryColor}  mt-10 `}>
               Copy the URL
             </h1>
             <p className=" text-black/70 text-sm mt-2 ">
@@ -44,7 +46,9 @@ export default function HowitWorks() {
                 <h1 className=" text-xl text-black/50 mr-14 bg-sky-blue ">
                   vrmr
                 </h1>
-                <div className="relative py-4 px-8 text-xl text-white font-medium rounded-[25px] bg-linear-105 md:bg-linear-125 from-[#EE2A7B] from-10% to-[#6228D7] to-70%">
+                <div
+                  className={`relative py-4 px-8 text-xl text-white font-medium rounded-[25px] ${bgColor}`}
+                >
                   Paste
                   <div className="absolute bottom-[-22px] right-5.5 w-10 ">
                     <Image
@@ -59,7 +63,7 @@ export default function HowitWorks() {
                 </div>
               </div>
             </div>
-            <h1 className=" text-lg` font-normal text-purple mt-10 ">
+            <h1 className={` text-lg font-normal ${primaryColor}  mt-10 `}>
               Paste the link
             </h1>
             <p className=" text-black/70 text-sm mt-2 ">
@@ -86,7 +90,7 @@ export default function HowitWorks() {
                 </div>
               </div>
             </div>
-            <h1 className=" text-lg` font-normal text-purple mt-10 ">
+            <h1 className={` text-lg font-normal ${primaryColor}  mt-10 `}>
               Download
             </h1>
             <p className=" text-black/70 text-sm mt-2 ">
