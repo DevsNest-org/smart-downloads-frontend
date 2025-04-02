@@ -2,6 +2,10 @@ import BestQuality from "@/components/ui/sections/bestquality";
 import DownloadFrom from "@/components/ui/sections/downloadfrom";
 import Header from "@/components/ui/sections/header";
 import HowitWorks from "@/components/ui/sections/howitworks";
+import getConfig from "next/config";
+
+const { publicRuntimeConfig } = getConfig();
+const basePath = publicRuntimeConfig?.basePath || "";
 
 export default function Home() {
   return (
@@ -31,11 +35,11 @@ export default function Home() {
         platform1={"TikTok"}
         platform1TextColor={"text-black"}
         platform1BgColor={"bg-black"}
-        platform1Icon={"/icons/arrow-tiktok.png"}
+        platform1Icon={`${basePath}/icons/arrow-tiktok.png`}
         link2={"/youtube"}
         platform2={"YouTube"}
         platform2TextColor={"text-[#FF0000]"}
-        platform2Icon={"/icons/arrow-yt.png"}
+        platform2Icon={`${basePath}/icons/arrow-yt.png`}
         platform2BgColor={"bg-[#FF0000]"}
       />
     </div>

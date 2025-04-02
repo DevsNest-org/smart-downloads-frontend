@@ -2,6 +2,10 @@ import Header from "@/components/ui/sections/header";
 import BestQuality from "@/components/ui/sections/bestquality";
 import DownloadFrom from "@/components/ui/sections/downloadfrom";
 import HowitWorks from "@/components/ui/sections/howitworks";
+import getConfig from "next/config";
+
+const { publicRuntimeConfig } = getConfig();
+const basePath = publicRuntimeConfig?.basePath || "";
 
 export default function Youtube() {
   return (
@@ -31,11 +35,11 @@ export default function Youtube() {
         platform1={"TikTok"}
         platform1TextColor={"text-black"}
         platform1BgColor={"bg-black"}
-        platform1Icon={"/icons/arrow-tiktok.png"}
+        platform1Icon={`${basePath}/icons/arrow-tiktok.png`}
         link2={"/"}
         platform2={"Instagram"}
         platform2TextColor={"text-purple"}
-        platform2Icon={"/icons/arrow-insta.png"}
+        platform2Icon={`${basePath}/icons/arrow-insta.png`}
         platform2BgColor={"bg-purple"}
       />{" "}
     </div>

@@ -1,4 +1,8 @@
 import Image from "next/image";
+import getConfig from "next/config";
+
+const { publicRuntimeConfig } = getConfig();
+const basePath = publicRuntimeConfig?.basePath || "";
 
 interface props {
   primaryColor: string;
@@ -21,7 +25,7 @@ export default function BestQuality({ primaryColor }: props) {
             <div className=" h-25 w-25 flex flex-col items-center justify-center text-xl top-14 text-white font-medium rounded-[18px] bg-[#EE2A7B]/10">
               <div className=" bottom-[-22px] right-9.5 w-10 ">
                 <Image
-                  src="/icons/time.png"
+                  src={`${basePath}/icons/time.png`}
                   alt="Profile Picture"
                   width={500}
                   height={400}
@@ -41,7 +45,7 @@ export default function BestQuality({ primaryColor }: props) {
             <div className=" h-25 w-25 flex flex-col items-center justify-center text-xl top-14 text-white font-medium rounded-[18px] bg-[#EE2A7B]/10">
               <div className=" bottom-[-22px] right-9.5 w-10 ">
                 <Image
-                  src="/icons/home-secure.png"
+                  src={`${basePath}/icons/home-secure.png`}
                   alt="Profile Picture"
                   width={500}
                   height={400}
@@ -61,7 +65,7 @@ export default function BestQuality({ primaryColor }: props) {
             <div className=" h-25 w-25 flex flex-col items-center justify-center text-xl top-14 text-white font-medium rounded-[18px] bg-[#EE2A7B]/10">
               <div className=" bottom-[-22px] right-9.5 w-10 ">
                 <Image
-                  src="/icons/hd.png"
+                  src={`${basePath}/icons/hd.png`}
                   alt="Profile Picture"
                   width={500}
                   height={400}
@@ -81,7 +85,7 @@ export default function BestQuality({ primaryColor }: props) {
             <div className=" h-25 w-25 flex flex-col items-center justify-center text-xl top-14 text-white font-medium rounded-[18px] bg-[#EE2A7B]/10">
               <div className=" bottom-[-22px] right-9.5 w-10 ">
                 <Image
-                  src="/icons/mouse.png"
+                  src={`${basePath}/icons/mouse.png`}
                   alt="Profile Picture"
                   width={500}
                   height={400}
