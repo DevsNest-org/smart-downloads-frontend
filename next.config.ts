@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const isGithubPages = process.env.NODE_ENV === "production";
-const basePath = isGithubPages ? "/smart-downloader-frontend/" : "";
+const basePath = isGithubPages ? "/smart-downloader-frontend" : "";
 
 const nextConfig: NextConfig = {
   output: "export",
