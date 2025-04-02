@@ -21,7 +21,7 @@ export default function BestQuality({ primaryColor }: props) {
             <div className=" h-25 w-25 flex flex-col items-center justify-center text-xl top-14 text-white font-medium rounded-[18px] bg-[#EE2A7B]/10">
               <div className=" bottom-[-22px] right-9.5 w-10 ">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/icons/time.png`}
+                  src="/icons/time.png"
                   alt="Profile Picture"
                   width={500}
                   height={400}
@@ -41,7 +41,7 @@ export default function BestQuality({ primaryColor }: props) {
             <div className=" h-25 w-25 flex flex-col items-center justify-center text-xl top-14 text-white font-medium rounded-[18px] bg-[#EE2A7B]/10">
               <div className=" bottom-[-22px] right-9.5 w-10 ">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/icons/home-secure.png`}
+                  src="/icons/home-secure.png"
                   alt="Profile Picture"
                   width={500}
                   height={400}
@@ -61,7 +61,7 @@ export default function BestQuality({ primaryColor }: props) {
             <div className=" h-25 w-25 flex flex-col items-center justify-center text-xl top-14 text-white font-medium rounded-[18px] bg-[#EE2A7B]/10">
               <div className=" bottom-[-22px] right-9.5 w-10 ">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/icons/hd.png`}
+                  src="/icons/hd.png"
                   alt="Profile Picture"
                   width={500}
                   height={400}
@@ -81,7 +81,7 @@ export default function BestQuality({ primaryColor }: props) {
             <div className=" h-25 w-25 flex flex-col items-center justify-center text-xl top-14 text-white font-medium rounded-[18px] bg-[#EE2A7B]/10">
               <div className=" bottom-[-22px] right-9.5 w-10 ">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/icons/mouse.png`}
+                  src="/icons/mouse.png"
                   alt="Profile Picture"
                   width={500}
                   height={400}
