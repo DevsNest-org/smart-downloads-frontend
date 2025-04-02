@@ -1,8 +1,4 @@
 import Image from "next/image";
-import getConfig from "next/config";
-
-const { publicRuntimeConfig } = getConfig();
-const basePath = publicRuntimeConfig?.basePath || "";
 
 interface props {
   primaryColor: string;

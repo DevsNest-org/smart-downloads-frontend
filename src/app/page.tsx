@@ -2,10 +2,6 @@ import BestQuality from "@/components/ui/sections/bestquality";
 import DownloadFrom from "@/components/ui/sections/downloadfrom";
 import Header from "@/components/ui/sections/header";
 import HowitWorks from "@/components/ui/sections/howitworks";
-import getConfig from "next/config";
-
-const { publicRuntimeConfig } = getConfig();
-const basePath = publicRuntimeConfig?.basePath || "";
 
 export default function Home() {
   return (
