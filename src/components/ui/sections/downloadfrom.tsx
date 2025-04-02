@@ -1,25 +1,30 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface props {
   link1: string;
   platform1: string;
-  platform1Color: string;
+  platform1TextColor: string;
+  platform1BgColor: string;
   platform1Icon: string;
   link2: string;
   platform2: string;
-  platform2Color: string;
+  platform2TextColor: string;
   platform2Icon: string;
+  platform2BgColor: string;
 }
 
 export default function DownloadFrom({
   link1,
   platform1,
-  platform1Color,
+  platform1TextColor,
+  platform1BgColor,
   platform1Icon,
   link2,
   platform2,
-  platform2Color,
+  platform2TextColor,
   platform2Icon,
+  platform2BgColor,
 }: props) {
   return (
     <div className=" flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-250 my-20 md:mt-0 lg:my-0 ">
@@ -27,8 +32,8 @@ export default function DownloadFrom({
         <div className=" w-full flex flex-col">
           <h1 className=" text-4xl font-semibold text-[#1E1E1E]/60">
             Download from <br className=" hidden md:inline-flex " />{" "}
-            <span className={`text-${platform1Color}`}>{platform1}</span> and{" "}
-            <span className={`text-${platform2Color}`}>{platform2}</span>
+            <span className={`${platform1TextColor}`}>{platform1}</span> and{" "}
+            <span className={`${platform2TextColor}`}>{platform2}</span>
           </h1>
           <p className=" text-black/70 mt-4 ">
             Download video and audio files from Tiktok and{" "}
@@ -36,9 +41,9 @@ export default function DownloadFrom({
           </p>
         </div>
         <div className=" w-full flex flex-col mt-12 lg:mt-0 ">
-          <a
+          <Link
             href={link1}
-            className={` relative h-45 w-full flex flex-col justify-end rounded-[20px] bg-${platform1Color}`}
+            className={` relative h-45 w-full flex flex-col justify-end rounded-[20px] ${platform1BgColor}`}
           >
             <div className="absolute top-4 right-4 flex flex-col items-center justify-center  h-10 w-10 rounded-full bg-white ">
               <div className="w-12">
@@ -55,10 +60,10 @@ export default function DownloadFrom({
             <h1 className="absolute bottom-5 left-5 text-xl font-medium ">
               {platform1} Downloader
             </h1>
-          </a>
-          <a
+          </Link>
+          <Link
             href={link2}
-            className={` relative h-45 w-full flex flex-col justify-end rounded-[20px] mt-6 bg-${platform2Color}`}
+            className={` relative h-45 w-full flex flex-col justify-end rounded-[20px] mt-6 ${platform2BgColor}`}
           >
             <div className="absolute top-4 right-4 flex flex-col items-center justify-center  h-10 w-10 rounded-full bg-white ">
               <div className="w-12">
@@ -75,7 +80,7 @@ export default function DownloadFrom({
             <h1 className="absolute bottom-5 left-5 text-white text-xl font-medium ">
               {platform2} Downloader
             </h1>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -29,12 +29,14 @@ export default function Youtube() {
       <DownloadFrom
         link1={"/tiktok"}
         platform1={"TikTok"}
-        platform1Color={"black"}
+        platform1TextColor={"text-black"}
+        platform1BgColor={"bg-black"}
         platform1Icon={"/icons/arrow-tiktok.png"}
         link2={"/"}
         platform2={"Instagram"}
-        platform2Color={"purple"}
+        platform2TextColor={"text-purple"}
         platform2Icon={"/icons/arrow-insta.png"}
+        platform2BgColor={"bg-purple"}
       />{" "}
     </div>
   );

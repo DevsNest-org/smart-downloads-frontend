@@ -30,11 +30,13 @@ export default function Tiktok() {
         link1={"/youtube"}
         platform1Icon={"/icons/arrow-yt.png"}
         platform1={"Youtube"}
-        platform1Color={"[#FF0000]"}
+        platform1TextColor={"text-[#FF0000]"}
+        platform1BgColor={"bg-[#FF0000]"}
         link2={"/"}
         platform2={"Instagram"}
-        platform2Color={"purple"}
+        platform2TextColor={"text-purple"}
         platform2Icon={"/icons/arrow-insta.png"}
+        platform2BgColor={"bg-purple"}
       />
     </div>
   );
