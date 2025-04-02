@@ -35,11 +35,11 @@ export default function Youtube() {
         platform1={"TikTok"}
         platform1TextColor={"text-black"}
         platform1BgColor={"bg-black"}
-        platform1Icon={`${basePath}/icons/arrow-tiktok.png`}
+        platform1Icon={`${process.env.NEXT_PUBLIC_BASE_PATH}/icons/arrow-tiktok.png`}
         link2={"/"}
         platform2={"Instagram"}
         platform2TextColor={"text-purple"}
-        platform2Icon={`${basePath}/icons/arrow-insta.png`}
+        platform2Icon={`${process.env.NEXT_PUBLIC_BASE_PATH}/icons/arrow-insta.png`}
         platform2BgColor={"bg-purple"}
       />{" "}
     </div>

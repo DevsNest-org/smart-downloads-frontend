@@ -61,7 +61,7 @@ export default function HowitWorks({ primaryColor, bgColor }: props) {
                   Paste
                   <div className="absolute bottom-[-22px] right-5.5 w-10 ">
                     <Image
-                      src={`${basePath}/select-hand-guesture.png`}
+                      src={`${process.env.NEXT_PUBLIC_BASE_PATH}/select-hand-guesture.png`}
                       alt="Profile Picture"
                       width={500}
                       height={400}
@@ -89,7 +89,7 @@ export default function HowitWorks({ primaryColor, bgColor }: props) {
                 Download
                 <div className="absolute bottom-[-22px] right-9.5 w-10 ">
                   <Image
-                    src={`${basePath}/icons/select-hand-guesture.png`}
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/icons/select-hand-guesture.png`}
                     alt="Profile Picture"
                     width={500}
                     height={400}

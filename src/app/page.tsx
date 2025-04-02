@@ -35,11 +35,11 @@ export default function Home() {
         platform1={"TikTok"}
         platform1TextColor={"text-black"}
         platform1BgColor={"bg-black"}
-        platform1Icon={`${basePath}/icons/arrow-tiktok.png`}
+        platform1Icon={`${process.env.NEXT_PUBLIC_BASE_PATH}/icons/arrow-tiktok.png`}
         link2={"/youtube"}
         platform2={"YouTube"}
         platform2TextColor={"text-[#FF0000]"}
-        platform2Icon={`${basePath}/icons/arrow-yt.png`}
+        platform2Icon={`${process.env.NEXT_PUBLIC_BASE_PATH}/icons/arrow-yt.png`}
         platform2BgColor={"bg-[#FF0000]"}
       />
     </div>

@@ -32,14 +32,14 @@ export default function Tiktok() {
       <BestQuality primaryColor={"text-black"} />
       <DownloadFrom
         link1={"/youtube"}
-        platform1Icon={`${basePath}/icons/arrow-yt.png`}
+        platform1Icon={`${process.env.NEXT_PUBLIC_BASE_PATH}/icons/arrow-yt.png`}
         platform1={"Youtube"}
         platform1TextColor={"text-[#FF0000]"}
         platform1BgColor={"bg-[#FF0000]"}
         link2={"/"}
         platform2={"Instagram"}
         platform2TextColor={"text-purple"}
-        platform2Icon={`${basePath}/icons/arrow-insta.png`}
+        platform2Icon={`${process.env.NEXT_PUBLIC_BASE_PATH}/icons/arrow-insta.png`}
         platform2BgColor={"bg-purple"}
       />
     </div>
