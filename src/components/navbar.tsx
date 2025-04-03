@@ -21,7 +21,7 @@ export default function Navbar({
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <span className="self-center text-xl font-light whitespace-nowrap text-black">
+          <span className="self-center text-xl font-normal whitespace-nowrap text-black">
             Devsnest
           </span>
         </Link>
