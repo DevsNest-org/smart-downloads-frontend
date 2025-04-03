@@ -40,7 +40,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
         ref={navLinksRef}
         className={`w-full transition-transform duration-300 ease-in-out transform ${
           isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-        } absolute top-18 left-0 bg-white z-10 md:hidden`}
+        } absolute top-18 left-0 border-t border-gray-200 bg-white z-10 md:hidden`}
       >
         <ul className="font-medium flex flex-col p-4 mt-4 text-black">
           <li
