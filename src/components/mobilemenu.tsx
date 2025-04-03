@@ -50,7 +50,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                 : "translate-x-full opacity-0"
             }`}
           >
-            <Link href="/" className="block py-2 px-3 text-black">
+            <Link
+              onClick={onClose}
+              href="/"
+              className="block py-2 px-3 text-black"
+            >
               Instagram
             </Link>
           </li>
@@ -61,7 +65,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                 : "translate-x-full opacity-0"
             }`}
           >
-            <Link href="/youtube" className="block py-2 px-3 text-black">
+            <Link
+              onClick={onClose}
+              href="/youtube"
+              className="block py-2 px-3 text-black"
+            >
               YouTube
             </Link>
           </li>
@@ -72,7 +80,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                 : "translate-x-full opacity-0"
             }`}
           >
-            <Link href="/tiktok" className="block py-2 px-3 text-black">
+            <Link
+              onClick={onClose}
+              href="/tiktok"
+              className="block py-2 px-3 text-black"
+            >
               TikTok
             </Link>
           </li>
