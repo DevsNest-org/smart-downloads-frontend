@@ -57,7 +57,7 @@ export default function HowitWorks({ primaryColor, bgColor }: props) {
                   Paste
                   <div className="absolute bottom-[-22px] right-5.5 w-10 ">
                     <Image
-                      src="/select-hand-guesture.png"
+                      src="/icons/select-hand-guesture.png"
                       alt="Profile Picture"
                       width={500}
                       height={400}
