@@ -17,8 +17,8 @@ export default function Header({ platform, description, bgColor }: props) {
         <br className="hidden md:inline-flex" /> {platform}
       </h1>
       <p className=" text-lg md:text-base  mt-6 ">{description}</p>
-      <div className=" w-full flex flex-col md:flex-row items-center mt-8 ">
-        <div className="flex items-center rounded-[20px] w-[85%] md:w-full pr-2 mr-0 md:mr-[14px] bg-white ">
+      <div className=" w-full md:w-auto flex flex-col md:flex-row items-center mt-8 ">
+        <div className="flex items-center rounded-[20px] w-[85%] md:w-auto pr-2 mr-0 md:mr-[14px] bg-white ">
           <input
             className="h-12 w-[90%] md:w-70 pl-4 pr-4 focus:outline-none text-black placeholder:text-gray-400  "
             type="text"
