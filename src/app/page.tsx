@@ -10,7 +10,7 @@ export default function Home() {
         platform="Instagram"
         description={
           <>
-            Download Instagra <br className="block md:hidden" /> videos,
+            Download Instagram <br className="block md:hidden" /> videos,
             pictures, reels, <br className="hidden md:inline-flex" /> IGTV{" "}
             <br className="block md:hidden" /> and carousel.
           </>
