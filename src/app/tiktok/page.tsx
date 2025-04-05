@@ -2,6 +2,13 @@ import Header from "@/components/ui/sections/header";
 import BestQuality from "@/components/ui/sections/bestquality";
 import DownloadFrom from "@/components/ui/sections/downloadfrom";
 import HowitWorks from "@/components/ui/sections/howitworks";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Download from Tiktok",
+  description:
+    "Download Tiktok short and long videos, and pictures in great quality.",
+};
 
 export default function Tiktok() {
   return (

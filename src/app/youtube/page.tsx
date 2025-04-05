@@ -2,6 +2,12 @@ import Header from "@/components/ui/sections/header";
 import BestQuality from "@/components/ui/sections/bestquality";
 import DownloadFrom from "@/components/ui/sections/downloadfrom";
 import HowitWorks from "@/components/ui/sections/howitworks";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Download from Youtube",
+  description: "Download YouTube videos and audio in mp3 and mp4.",
+};
 
 export default function Youtube() {
   return (
