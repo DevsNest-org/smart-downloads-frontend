@@ -35,7 +35,9 @@ export default function RootLayout({
     <html lang="en">
       <ScrollContext>
         <body
-          className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} ${
+            inter.variable
+          } antialiased ${isMobileMenuOpen && "fixed"} `}
         >
           {" "}
           <Navbar
