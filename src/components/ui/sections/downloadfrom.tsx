@@ -30,11 +30,11 @@ export default function DownloadFrom({
     <div className=" flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-250 my-20 md:mt-0 lg:my-0 ">
       <div className=" h-auto w-full flex flex-col lg:flex-row justify-between ">
         <div className=" w-full flex flex-col">
-          <h1 className=" text-4xl font-semibold text-[#1E1E1E]/60">
+          <h2 className=" text-4xl font-semibold text-[#1E1E1E]/60">
             Download from <br className=" hidden md:inline-flex " />{" "}
             <span className={`${platform1TextColor}`}>{platform1}</span> and{" "}
             <span className={`${platform2TextColor}`}>{platform2}</span>
-          </h1>
+          </h2>
           <p className=" text-black/70 mt-4 ">
             Download video and audio files from Tiktok and{" "}
             <br className=" hidden md:inline-flex " /> Youtube
@@ -57,9 +57,9 @@ export default function DownloadFrom({
                 />
               </div>
             </div>
-            <h1 className="absolute bottom-5 left-5 text-xl font-medium ">
+            <h2 className="absolute bottom-5 left-5 text-xl font-medium ">
               {platform1} Downloader
-            </h1>
+            </h2>
           </Link>
           <Link
             href={link2}
@@ -77,9 +77,9 @@ export default function DownloadFrom({
                 />
               </div>
             </div>
-            <h1 className="absolute bottom-5 left-5 text-white text-xl font-medium ">
+            <h2 className="absolute bottom-5 left-5 text-white text-xl font-medium ">
               {platform2} Downloader
-            </h1>
+            </h2>
           </Link>
         </div>
       </div>

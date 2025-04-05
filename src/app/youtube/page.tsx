@@ -34,9 +34,9 @@ export default function Youtube() {
         platform1Icon={"/icons/arrow-tiktok.png"}
         link2={"/"}
         platform2={"Instagram"}
-        platform2TextColor={"text-purple"}
+        platform2TextColor={"text-[#6228D7]"}
         platform2Icon={"/icons/arrow-insta.png"}
-        platform2BgColor={"bg-purple"}
+        platform2BgColor={"bg-[#6228D7]"}
       />{" "}
     </div>
   );

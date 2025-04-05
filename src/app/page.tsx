@@ -20,12 +20,12 @@ export default function Home() {
         }
       />
       <HowitWorks
-        primaryColor={"text-purple"}
+        primaryColor={"text-[#6228D7]"}
         bgColor={
           " bg-linear-105 md:bg-linear-125 from-[#EE2A7B] from-10% to-[#6228D7] to-70%"
         }
       />
-      <BestQuality primaryColor={"text-purple"} />
+      <BestQuality primaryColor={"text-[#6228D7]"} />
       <DownloadFrom
         link1={"/tiktok"}
         platform1={"TikTok"}

@@ -8,9 +8,9 @@ export default function BestQuality({ primaryColor }: props) {
   return (
     <div className=" flex flex-col items-center justify-center h-auto min-h-150 w-[90%] max-w-300 mt-20 md:mt-0 ">
       <div className=" h-auto w-full flex flex-col items-center">
-        <h1 className={` text-4xl text-center font-semibold ${primaryColor}`}>
+        <h2 className={` text-4xl text-center font-semibold ${primaryColor}`}>
           Only the best <br className="inline-flex md:hidden" /> Quality
-        </h1>
+        </h2>
         <p className=" text-black/70 text-center mt-4 ">
           We’ve taken all the best <br className=" inline-flex md:hidden" />{" "}
           attributes a downloader can <br className="hidden md:inline-flex" />{" "}
@@ -30,9 +30,9 @@ export default function BestQuality({ primaryColor }: props) {
                 />
               </div>
             </div>
-            <h1 className={` text-lg font-normal ${primaryColor} mt-10 `}>
+            <h2 className={` text-lg font-normal ${primaryColor} mt-10 `}>
               Fast and Quick
-            </h1>
+            </h2>
             <p className=" text-black/70 text-sm text-center mt-2 ">
               Download your media <br /> file in seconds
             </p>
@@ -50,9 +50,9 @@ export default function BestQuality({ primaryColor }: props) {
                 />
               </div>
             </div>
-            <h1 className={` text-lg font-normal ${primaryColor} mt-10 `}>
+            <h2 className={` text-lg font-normal ${primaryColor} mt-10 `}>
               Secure
-            </h1>
+            </h2>
             <p className=" text-black/70 text-sm text-center mt-2 ">
               Your privacy is <br /> protected and secure
             </p>
@@ -70,9 +70,9 @@ export default function BestQuality({ primaryColor }: props) {
                 />
               </div>
             </div>
-            <h1 className={` text-lg font-normal ${primaryColor} mt-10 `}>
+            <h2 className={` text-lg font-normal ${primaryColor} mt-10 `}>
               Top Quality
-            </h1>
+            </h2>
             <p className=" text-black/70 text-sm text-center mt-2 ">
               Your media quality will <br /> not be compressed
             </p>
@@ -90,9 +90,9 @@ export default function BestQuality({ primaryColor }: props) {
                 />
               </div>
             </div>
-            <h1 className={` text-lg font-normal ${primaryColor} mt-10 `}>
+            <h2 className={` text-lg font-normal ${primaryColor} mt-10 `}>
               Simply and Easy
-            </h1>
+            </h2>
             <p className=" text-black/70 text-sm text-center mt-2 ">
               The processes are <br /> effortless and simple
             </p>
