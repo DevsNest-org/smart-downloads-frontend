@@ -57,7 +57,7 @@ export default function DownloadFrom({
                 />
               </div>
             </div>
-            <h2 className="absolute bottom-5 left-5 text-xl font-medium ">
+            <h2 className="absolute bottom-5 left-5 text-white text-xl font-medium ">
               {platform1} Downloader
             </h2>
           </Link>
