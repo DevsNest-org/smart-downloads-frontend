@@ -8,6 +8,7 @@ import ScrollContext from "@/components/scrollcontext";
 import MobileMenu from "@/components/mobilemenu";
 import { useState } from "react";
 import Script from "next/script";
+import { Metadata } from "next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +25,29 @@ const inter = Inter({
   weight: ["100", "400", "900"],
   variable: "--font-inter",
 });
+
+const title = "Smart Downloads";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://smartdownloads.devsnest.site"),
+  keywords: [
+    "Smart Downloads",
+    "Video Downloader",
+    "Youtube Video Downloader",
+    "Tiktok Video Downloader",
+    "Instagram Video Downloader",
+  ],
+  title,
+  applicationName: title,
+  manifest: "/site.webmanifest",
+  description: "Sunday Ochuko's official Website.",
+  openGraph: {
+    title,
+    description: "Sunday Ochuko's official Website.",
+    type: "website",
+    // images: [{ url: ogImage, alt: title }],
+  },
+};
 
 export default function RootLayout({
   children,
