@@ -36,22 +36,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-7KSBKSJ41X"
-        ></Script>
+        {/* Preconnect to Google Analytics to speed up loading */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
 
+        {/* Google Analytics Script (Non-Blocking) */}
         <Script
-          id="google-analytics"
-          dangerouslySetInnerHTML={{
-            __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-7KSBKSJ41X');
-        `,
-          }}
+          defer
+          src="https://www.googletagmanager.com/gtag/js?id=G-7KSBKSJ41X"
+          strategy="lazyOnload" // Loads only after the page is interactive
         />
+        <Script defer id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-7KSBKSJ41X');
+          `}
+        </Script>
       </Head>
       <ScrollContext>
         <body
