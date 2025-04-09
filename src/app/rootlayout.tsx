@@ -7,7 +7,6 @@ import Footer from "@/components/footer";
 import ScrollContext from "@/components/scrollcontext";
 import MobileMenu from "@/components/mobilemenu";
 import { useState } from "react";
-import { Head } from "next/document";
 import Script from "next/script";
 
 const geistSans = Geist({
@@ -35,25 +34,21 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
-        {/* Preconnect to Google Analytics to speed up loading */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
+      <link rel="preconnect" href="https://www.googletagmanager.com" />
 
-        {/* Google Analytics Script (Non-Blocking) */}
-        <Script
-          defer
-          src="https://www.googletagmanager.com/gtag/js?id=G-7KSBKSJ41X"
-          strategy="lazyOnload" // Loads only after the page is interactive
-        />
-        <Script defer id="google-analytics" strategy="afterInteractive">
-          {`
+      <Script
+        defer
+        src="https://www.googletagmanager.com/gtag/js?id=G-7KSBKSJ41X"
+        strategy="lazyOnload"
+      />
+      <Script defer id="google-analytics" strategy="afterInteractive">
+        {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-7KSBKSJ41X');
           `}
-        </Script>
-      </Head>
+      </Script>
       <ScrollContext>
         <body
           className={`${geistSans.variable} ${geistMono.variable} ${
