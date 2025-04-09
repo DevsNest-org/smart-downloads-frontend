@@ -7,6 +7,8 @@ import Footer from "@/components/footer";
 import ScrollContext from "@/components/scrollcontext";
 import MobileMenu from "@/components/mobilemenu";
 import { useState } from "react";
+import { Head } from "next/document";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,13 +35,30 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Head>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-7KSBKSJ41X"
+        ></Script>
+
+        <Script
+          id="google-analytics"
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-7KSBKSJ41X');
+        `,
+          }}
+        />
+      </Head>
       <ScrollContext>
         <body
           className={`${geistSans.variable} ${geistMono.variable} ${
             inter.variable
           } antialiased ${isMobileMenuOpen && "fixed"} `}
         >
-          {" "}
           <Navbar
             isMobileMenuOpen={isMobileMenuOpen}
             setIsMobileMenuOpen={setIsMobileMenuOpen}
