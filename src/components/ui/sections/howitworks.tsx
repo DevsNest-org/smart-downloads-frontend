@@ -29,7 +29,7 @@ export default function HowitWorks({ primaryColor, bgColor }: props) {
                 Copied
               </p>
               <div className=" py-5 pl-5 rounded-l-[20px] mt-1 bg-white ">
-                <h2 className=" text-xl text-black/50 bg-sky-blue ">
+                <h2 className=" text-xl text-black/50 bg-[#99E9FF] ">
                   www.instagram.com/p/Dvrmr
                 </h2>
               </div>
@@ -48,7 +48,7 @@ export default function HowitWorks({ primaryColor, bgColor }: props) {
                 2
               </p>
               <div className=" flex items-center py-2 pr-2 rounded-r-[20px] bg-white ">
-                <h2 className=" text-xl text-black/50 mr-14 bg-sky-blue ">
+                <h2 className=" text-xl text-black/50 mr-14 bg-[#99E9FF] ">
                   vrmr
                 </h2>
                 <div
