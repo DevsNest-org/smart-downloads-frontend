@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import ScrollContext from "@/components/scrollcontext";
 import MobileMenu from "@/components/mobilemenu";
 import { useState } from "react";
+import { DownloadProvider } from "@/context/DownloadContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,17 +39,18 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
         >
-          {" "}
-          <Navbar
-            isMobileMenuOpen={isMobileMenuOpen}
-            setIsMobileMenuOpen={setIsMobileMenuOpen}
-          />
-          <MobileMenu
-            isOpen={isMobileMenuOpen}
-            onClose={() => setIsMobileMenuOpen(false)}
-          />
-          {children}
-          <Footer />{" "}
+          <DownloadProvider>
+            <Navbar
+              isMobileMenuOpen={isMobileMenuOpen}
+              setIsMobileMenuOpen={setIsMobileMenuOpen}
+            />
+            <MobileMenu
+              isOpen={isMobileMenuOpen}
+              onClose={() => setIsMobileMenuOpen(false)}
+            />
+            {children}
+            <Footer />
+          </DownloadProvider>
         </body>
       </ScrollContext>
     </html>

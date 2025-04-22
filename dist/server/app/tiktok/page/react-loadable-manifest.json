@@ -1,1 +1,9 @@
-{}
+{
+  "[project]/src/components/DownloadHandler.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/DownloadHandler.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/src_components_DownloadHandler_tsx_d81c150c._.js",
+      "static/chunks/src_components_DownloadHandler_tsx_52adfb08._.js"
+    ]
+  }
+}
