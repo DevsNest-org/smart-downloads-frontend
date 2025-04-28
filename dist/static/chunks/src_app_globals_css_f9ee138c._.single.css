@@ -754,6 +754,10 @@
     height: 100%;
   }
 
+  .h-screen {
+    height: 100vh;
+  }
+
   .min-h-150 {
     min-height: calc(var(--spacing) * 150);
   }

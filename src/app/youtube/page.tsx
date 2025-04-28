@@ -2,11 +2,14 @@ import Header from "@/components/ui/sections/header";
 import BestQuality from "@/components/ui/sections/bestquality";
 import DownloadFrom from "@/components/ui/sections/downloadfrom";
 import HowitWorks from "@/components/ui/sections/howitworks";
+import ComingSoon from "../comingsoon/page";
 
 export default function Youtube() {
   return (
-    <div className="flex flex-col items-center bg-white">
-      <Header
+    <>
+      <ComingSoon />
+      {/* <div className="flex flex-col items-center bg-white">
+        <Header
         platform="Youtube"
         description={
           <>
@@ -36,6 +39,7 @@ export default function Youtube() {
         platform2Color={"purple"}
         platform2Icon={"/icons/arrow-insta.png"}
       />{" "}
-    </div>
+      </div> */}
+    </>
   );
 }
