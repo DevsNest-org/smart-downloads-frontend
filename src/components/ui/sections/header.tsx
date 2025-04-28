@@ -8,20 +8,11 @@ export default function Header({ platform, description, bgColor }: any) {
   const { downloadVideo, isLoading } = useDownload();
 
   const handlePaste = async () => {
-    try {
-      if (!navigator.clipboard) {
-        throw new Error('Clipboard API not available');
-      }
-      const text = await navigator.clipboard.readText();
-      setInputValue(text);
-    } catch (err) {
-      console.error("Failed to read clipboard contents: ", err);
-      // Fallback to prompt if clipboard API fails
-      const fallbackText = prompt('Please paste the URL here:');
-      if (fallbackText) {
-        setInputValue(fallbackText);
-      }
-    }
+    // if (!navigator.clipboard) {
+    //   throw new Error('Clipboard API not available');
+    // }
+    const text = await navigator.clipboard.readText();
+    setInputValue(text);
   };
 
   const handleDownload = async () => {

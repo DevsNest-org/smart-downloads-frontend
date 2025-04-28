@@ -19,20 +19,11 @@ function Header({ platform, description, bgColor }) {
     const [inputValue, setInputValue] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const { downloadVideo, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$DownloadContext$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useDownload"])();
     const handlePaste = async ()=>{
-        try {
-            if (!navigator.clipboard) {
-                throw new Error('Clipboard API not available');
-            }
-            const text = await navigator.clipboard.readText();
-            setInputValue(text);
-        } catch (err) {
-            console.error("Failed to read clipboard contents: ", err);
-            // Fallback to prompt if clipboard API fails
-            const fallbackText = prompt('Please paste the URL here:');
-            if (fallbackText) {
-                setInputValue(fallbackText);
-            }
-        }
+        // if (!navigator.clipboard) {
+        //   throw new Error('Clipboard API not available');
+        // }
+        const text = await navigator.clipboard.readText();
+        setInputValue(text);
     };
     const handleDownload = async ()=>{
         if (!inputValue) return;
@@ -49,7 +40,7 @@ function Header({ platform, description, bgColor }) {
                         className: "block md:hidden"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/sections/header.tsx",
-                        lineNumber: 37,
+                        lineNumber: 28,
                         columnNumber: 18
                     }, this),
                     " from",
@@ -58,7 +49,7 @@ function Header({ platform, description, bgColor }) {
                         className: "block md:hidden"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/sections/header.tsx",
-                        lineNumber: 38,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this),
                     " ",
@@ -66,7 +57,7 @@ function Header({ platform, description, bgColor }) {
                         className: "hidden md:inline-flex"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/sections/header.tsx",
-                        lineNumber: 39,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this),
                     " ",
@@ -74,7 +65,7 @@ function Header({ platform, description, bgColor }) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ui/sections/header.tsx",
-                lineNumber: 36,
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -82,7 +73,7 @@ function Header({ platform, description, bgColor }) {
                 children: description
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/sections/header.tsx",
-                lineNumber: 41,
+                lineNumber: 32,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -99,7 +90,7 @@ function Header({ platform, description, bgColor }) {
                                 placeholder: `Input ${platform} link URL`
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/sections/header.tsx",
-                                lineNumber: 44,
+                                lineNumber: 35,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -108,13 +99,13 @@ function Header({ platform, description, bgColor }) {
                                 children: "Paste"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ui/sections/header.tsx",
-                                lineNumber: 51,
+                                lineNumber: 42,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ui/sections/header.tsx",
-                        lineNumber: 43,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -124,19 +115,19 @@ function Header({ platform, description, bgColor }) {
                         children: isLoading ? "Downloading..." : "Download"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/sections/header.tsx",
-                        lineNumber: 58,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ui/sections/header.tsx",
-                lineNumber: 42,
+                lineNumber: 33,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/ui/sections/header.tsx",
-        lineNumber: 33,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 }
