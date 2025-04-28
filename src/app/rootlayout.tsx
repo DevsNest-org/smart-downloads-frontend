@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import ScrollContext from "@/components/scrollcontext";
 import MobileMenu from "@/components/mobilemenu";
 import { useState } from "react";
+import { DownloadProvider } from "@/context/DownloadContext";
 import Script from "next/script";
 import { Metadata } from "next";
 
@@ -79,16 +80,18 @@ export default function RootLayout({
             inter.variable
           } antialiased ${isMobileMenuOpen && "fixed"} `}
         >
-          <Navbar
-            isMobileMenuOpen={isMobileMenuOpen}
-            setIsMobileMenuOpen={setIsMobileMenuOpen}
-          />
-          <MobileMenu
-            isOpen={isMobileMenuOpen}
-            onClose={() => setIsMobileMenuOpen(false)}
-          />
-          {children}
-          <Footer />{" "}
+          <DownloadProvider>
+            <Navbar
+              isMobileMenuOpen={isMobileMenuOpen}
+              setIsMobileMenuOpen={setIsMobileMenuOpen}
+            />
+            <MobileMenu
+              isOpen={isMobileMenuOpen}
+              onClose={() => setIsMobileMenuOpen(false)}
+            />
+            {children}
+            <Footer />
+          </DownloadProvider>
         </body>
       </ScrollContext>
     </html>
