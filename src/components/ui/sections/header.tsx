@@ -1,7 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { FragmentProps, useState } from "react";
 import { useDownload } from "@/context/DownloadContext";
+
+interface HeaderProps {
+  platform: string;
+  description: FragmentProps;
+  bgColor: string;
+}
 
 export default function Header({ platform, description, bgColor }: any) {
   const [inputValue, setInputValue] = useState("");
