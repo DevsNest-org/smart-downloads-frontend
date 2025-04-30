@@ -1,15 +1,19 @@
 "use client";
 
-import { FragmentProps, useState } from "react";
+import { ReactElement, useState } from "react";
 import { useDownload } from "@/context/DownloadContext";
 
 interface HeaderProps {
   platform: string;
-  description: FragmentProps;
+  description: ReactElement;
   bgColor: string;
 }
 
-export default function Header({ platform, description, bgColor }: any) {
+export default function Header({
+  platform,
+  description,
+  bgColor,
+}: HeaderProps) {
   const [inputValue, setInputValue] = useState("");
   const { downloadVideo, isLoading } = useDownload();
 
