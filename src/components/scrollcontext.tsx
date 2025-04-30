@@ -50,7 +50,7 @@ export default function ScrollContext({ children }: ScrollContextProps) {
         lenisRef.destroy();
       }
     };
-  }, []);
+  }, [lenisRef, rafState]);
 
   return (
     <SmoothScrollContext.Provider value={lenisRef}>
