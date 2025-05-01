@@ -67,15 +67,16 @@ export default function Header({
             />
             <button
               onClick={handlePaste}
-              className="h-8 w-[60px] text-black rounded-[10px] bg-gray-300 hover:scale-105 duration-300"
+              className="h-8 w-[60px] text-black rounded-[10px] bg-gray-300 hover:scale-105 duration-300 active:scale-95"
             >
               Paste
             </button>
           </div>
           <button
             onClick={handleFetchVideo}
+            onTouchEnd={handleFetchVideo}
             disabled={isLoading || !inputValue}
-            className={`h-12 w-25 rounded-[20px] bg-black hover:scale-105 mt-[25px] md:mt-0 duration-300 ${
+            className={`h-12 w-25 rounded-[20px] bg-black hover:scale-105 active:scale-95 mt-[25px] md:mt-0 duration-300 min-w-[120px] touch-manipulation ${
               isLoading || !inputValue ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
@@ -85,7 +86,7 @@ export default function Header({
       ) : (
         <div className="flex flex-col items-center mt-8">
           {data?.data?.[0]?.thumbnail && (
-            <div className="relative w-[300px] h-[300px] mb-6 rounded-lg overflow-hidden bg-gray-400">
+            <div className="relative w-[30vh] md:w-[300px] h-[20vh] md:h-[300px] mb-6 rounded-lg overflow-hidden bg-gray-400">
               <Image
                 src={data.data[0].thumbnail}
                 alt="Video thumbnail"
@@ -97,13 +98,15 @@ export default function Header({
           <div className="flex gap-4">
             <button
               onClick={handleDownload}
-              className="h-12 w-48 rounded-[20px] bg-black hover:scale-105 duration-300"
+              onTouchEnd={handleDownload}
+              className="h-12 w-40 md:w-48 rounded-[20px] bg-black hover:scale-105 active:scale-95 duration-300 touch-manipulation"
             >
               Download Video
             </button>
             <button
               onClick={handleReset}
-              className="h-12 w-48 rounded-[20px] bg-gray-600 hover:scale-105 duration-300"
+              onTouchEnd={handleReset}
+              className="h-12 w-40 md:w-48 rounded-[20px] bg-gray-600 hover:scale-105 active:scale-95 duration-300 touch-manipulation"
             >
               Try Another
             </button>
