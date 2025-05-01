@@ -2,9 +2,13 @@ export interface DownloadRequest {
   url: string;
 }
 
+export interface VideoData {
+  thumbnail: string;
+  url: string;
+}
+
 export interface DownloadResponse {
-  platform: string;
-  originalUrl: string;
-  videoUrl: string;
-  message: string;
+  developer: string;
+  status: boolean;
+  data: VideoData[];
 } 

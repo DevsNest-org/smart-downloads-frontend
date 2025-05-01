@@ -7,6 +7,7 @@ export interface DownloadState {
 }
 
 export interface DownloadContextType extends DownloadState {
-  downloadVideo: (platform: string, url: string) => Promise<void>;
+  downloadVideo: (platform: string, url: string) => Promise<DownloadResponse | undefined>;
+  initiateDownload: (platform: string) => void;
   resetState: () => void;
-} 
+}

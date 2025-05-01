@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 
 interface DownloadHandlerProps {
-  downloadData: { url: string; platform: string } | null;
+  downloadData: { url: string; platform: string; thumbnail?: string } | null;
   onDownloadComplete: () => void;
 }
 
