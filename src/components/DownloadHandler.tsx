@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 interface DownloadHandlerProps {
   downloadData: { url: string; platform: string; thumbnail?: string } | null;
@@ -8,41 +8,40 @@ interface DownloadHandlerProps {
 }
 
 export default function DownloadHandler({ downloadData, onDownloadComplete }: DownloadHandlerProps) {
+  const [isMounted, setIsMounted] = useState(false);
+
   useEffect(() => {
-    if (downloadData) {
-      const a = document.createElement('a');
-      a.href = downloadData.url;
-      a.download = `${downloadData.platform}-video.mp4`;
-      a.target = '_blank'; // Open in new tab for Instagram
-      a.rel = 'noopener noreferrer';
-      
-      // For Instagram, we need to handle the download differently
-      if (downloadData.platform === 'instagram') {
-        // Create a fetch request to get the video
-        fetch(downloadData.url)
-          .then(response => response.blob())
-          .then(blob => {
-            const url = window.URL.createObjectURL(blob);
-            a.href = url;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            window.URL.revokeObjectURL(url);
-            onDownloadComplete();
-          })
-          .catch(error => {
-            console.error('Error downloading video:', error);
-            onDownloadComplete();
-          });
-      } else {
-        // For other platforms, use the direct download
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    const handleDownload = async () => {
+      if (!downloadData || !isMounted) return;
+
+      try {
+        const response = await fetch(downloadData.url);
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${downloadData.platform}-video.mp4`;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+        onDownloadComplete();
+      } catch (error) {
+        console.error('Error downloading video:', error);
         onDownloadComplete();
       }
+    };
+
+    if (downloadData && isMounted) {
+      handleDownload();
     }
-  }, [downloadData, onDownloadComplete]);
+  }, [downloadData, onDownloadComplete, isMounted]);
 
   return null;
 } 

@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactElement, useState } from "react";
+import { ReactElement, useState, useEffect } from "react";
 import { useDownload } from "@/context/DownloadContext";
 import Image from "next/image";
 import { RiseLoader } from "react-spinners";
@@ -17,9 +17,14 @@ export default function Header({
   bgColor,
 }: HeaderProps) {
   const [inputValue, setInputValue] = useState("");
-  const { downloadVideo, initiateDownload, resetState, isLoading, data } =
-    useDownload();
+  const { downloadVideo, initiateDownload, resetState, isLoading, data, error } = useDownload();
   const [showThumbnail, setShowThumbnail] = useState(false);
+  const [isDownloading, setIsDownloading] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const handlePaste = async () => {
     const text = await navigator.clipboard.readText();
@@ -28,13 +33,39 @@ export default function Header({
 
   const handleFetchVideo = async () => {
     if (!inputValue) return;
-    const response = await downloadVideo(platform.toLowerCase(), inputValue);
-    if (response?.status) {
-      setShowThumbnail(true);
+    try {
+      console.log('Fetching video for:', inputValue);
+      const response = await downloadVideo(platform.toLowerCase(), inputValue);
+      console.log('Raw response:', response);
+      
+      if (!response) {
+        console.error('No response received from downloadVideo');
+        return;
+      }
+
+      if (response.status === true && response.data?.[0]?.thumbnail) {
+        console.log('Valid response with thumbnail:', response.data[0]);
+        setShowThumbnail(true);
+      } else {
+        console.error('Invalid response format:', {
+          status: response.status,
+          hasData: !!response.data,
+          dataLength: response.data?.length,
+          hasThumbnail: !!response.data?.[0]?.thumbnail
+        });
+      }
+    } catch (error) {
+      console.error('Error fetching video:', error);
     }
   };
 
   const handleDownload = () => {
+    if (!data?.data?.[0]?.url) {
+      console.error('No download URL available');
+      return;
+    }
+    console.log('Initiating download with URL:', data.data[0].url);
+    setIsDownloading(true);
     initiateDownload(platform.toLowerCase());
   };
 
@@ -42,7 +73,12 @@ export default function Header({
     resetState();
     setShowThumbnail(false);
     setInputValue("");
+    setIsDownloading(false);
   };
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <div
@@ -54,7 +90,13 @@ export default function Header({
         <br className="hidden md:inline-flex" /> {platform}
       </h1>
       <p className="text-lg md:text-base mt-6">{description}</p>
-
+      
+      {error && (
+        <div className="text-red-500 mt-4">
+          {error}
+        </div>
+      )}
+      
       {!showThumbnail ? (
         <div className="w-full md:w-auto flex flex-col md:flex-row items-center mt-8">
           <div className="flex items-center rounded-[20px] w-[85%] md:w-auto pr-2 mr-0 md:mr-[14px] bg-white">
@@ -67,16 +109,15 @@ export default function Header({
             />
             <button
               onClick={handlePaste}
-              className="h-8 w-[60px] text-black rounded-[10px] bg-gray-300 hover:scale-105 duration-300 active:scale-95"
+              className="h-8 w-[60px] text-black rounded-[10px] bg-gray-300 hover:scale-105 duration-300"
             >
               Paste
             </button>
           </div>
           <button
             onClick={handleFetchVideo}
-            onTouchEnd={handleFetchVideo}
             disabled={isLoading || !inputValue}
-            className={`h-12 w-25 rounded-[20px] bg-black hover:scale-105 active:scale-95 mt-[25px] md:mt-0 duration-300 min-w-[120px] touch-manipulation ${
+            className={`h-12 w-25 rounded-[20px] bg-black hover:scale-105 mt-[25px] md:mt-0 duration-300 ${
               isLoading || !inputValue ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
@@ -86,27 +127,32 @@ export default function Header({
       ) : (
         <div className="flex flex-col items-center mt-8">
           {data?.data?.[0]?.thumbnail && (
-            <div className="relative w-[30vh] md:w-[300px] h-[20vh] md:h-[300px] mb-6 rounded-lg overflow-hidden bg-gray-400">
+            <div className="relative w-[300px] h-[300px] mb-6 rounded-lg overflow-hidden bg-gray-400">
               <Image
                 src={data.data[0].thumbnail}
                 alt="Video thumbnail"
                 fill
                 className="object-cover"
+                priority
               />
             </div>
           )}
           <div className="flex gap-4">
             <button
               onClick={handleDownload}
-              onTouchEnd={handleDownload}
-              className="h-12 w-40 md:w-48 rounded-[20px] bg-black hover:scale-105 active:scale-95 duration-300 touch-manipulation"
+              disabled={isDownloading || !data?.data?.[0]?.url}
+              className={`h-12 w-48 rounded-[20px] bg-black hover:scale-105 duration-300 ${
+                isDownloading || !data?.data?.[0]?.url ? "opacity-50 cursor-not-allowed" : ""
+              }`}
             >
-              Download Video
+              {isDownloading ? <RiseLoader color="white" size={8} /> : "Download Video"}
             </button>
             <button
               onClick={handleReset}
-              onTouchEnd={handleReset}
-              className="h-12 w-40 md:w-48 rounded-[20px] bg-gray-600 hover:scale-105 active:scale-95 duration-300 touch-manipulation"
+              disabled={isDownloading}
+              className={`h-12 w-48 rounded-[20px] bg-gray-600 hover:scale-105 duration-300 ${
+                isDownloading ? "opacity-50 cursor-not-allowed" : ""
+              }`}
             >
               Try Another
             </button>
