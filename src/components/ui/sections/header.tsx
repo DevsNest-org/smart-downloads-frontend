@@ -34,9 +34,7 @@ export default function Header({
   const handleFetchVideo = async () => {
     if (!inputValue) return;
     try {
-      console.log('Fetching video for:', inputValue);
       const response = await downloadVideo(platform.toLowerCase(), inputValue);
-      console.log('Raw response:', response);
       
       if (!response) {
         console.error('No response received from downloadVideo');
@@ -61,10 +59,8 @@ export default function Header({
 
   const handleDownload = () => {
     if (!data?.data?.[0]?.url) {
-      console.error('No download URL available');
       return;
     }
-    console.log('Initiating download with URL:', data.data[0].url);
     setIsDownloading(true);
     initiateDownload(platform.toLowerCase());
   };

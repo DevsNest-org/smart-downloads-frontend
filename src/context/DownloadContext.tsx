@@ -21,31 +21,25 @@ export const DownloadProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [downloadData, setDownloadData] = useState<{ url: string; platform: string; thumbnail?: string } | null>(null);
 
   const downloadVideo = async (platform: string, url: string): Promise<DownloadResponse | undefined> => {
-    console.log('DownloadContext: Starting download for', platform, url);
     setState({ ...state, isLoading: true, error: null });
     try {
       let response = null;
       switch (platform) {
         case 'youtube':
-          console.log('DownloadContext: Fetching YouTube video');
           response = await downloadYouTubeVideo({ url });
           break;
 
         case 'tiktok':
-          console.log('DownloadContext: Fetching TikTok video');
           response = await downloadTikTokVideo({ url });
           break;
 
         case 'instagram':
-          console.log('DownloadContext: Fetching Instagram video');
           response = await downloadInstagramVideo({ url });
           break;
 
         default:
           throw new Error('Unsupported platform');
       }
-
-      console.log('DownloadContext: Raw response:', response);
 
       if (!response) {
         throw new Error('No response received from server');
@@ -59,11 +53,9 @@ export const DownloadProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         throw new Error('Missing required data in response');
       }
 
-      console.log('DownloadContext: Valid response with data:', response);
       setState({ ...state, isLoading: false, data: response });
       return response;
     } catch (error) {
-      console.error('DownloadContext: Error downloading video:', error);
       const errorMessage = error instanceof Error ? error.message : 'An error occurred while downloading the video';
       setState({
         ...state,
@@ -75,11 +67,7 @@ export const DownloadProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   };
 
   const initiateDownload = (platform: string) => {
-    console.log('DownloadContext: Initiating download for', platform);
-    console.log('DownloadContext: Current state data:', state.data);
-    
     if (!state.data?.data?.[0]?.url) {
-      console.error('DownloadContext: No download URL available in state');
       setState({
         ...state,
         error: 'No download URL available. Please try again.',
@@ -87,7 +75,6 @@ export const DownloadProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       return;
     }
 
-    console.log('DownloadContext: Setting download data with URL:', state.data.data[0].url);
     setDownloadData({ 
       url: state.data.data[0].url, 
       platform,
@@ -96,13 +83,11 @@ export const DownloadProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   };
 
   const resetState = () => {
-    console.log('DownloadContext: Resetting state');
     setState(initialState);
     setDownloadData(null);
   };
 
   const handleDownloadComplete = () => {
-    console.log('DownloadContext: Download complete');
     setDownloadData(null);
   };
 
