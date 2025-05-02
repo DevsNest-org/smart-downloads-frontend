@@ -56,6 +56,7 @@ export const DownloadProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       setState({ ...state, isLoading: false, data: response });
       return response;
     } catch (error) {
+      console.error('DownloadContext: Error downloading video:', error);
       const errorMessage = error instanceof Error ? error.message : 'An error occurred while downloading the video';
       setState({
         ...state,

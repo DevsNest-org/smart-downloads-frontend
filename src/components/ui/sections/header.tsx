@@ -42,7 +42,6 @@ export default function Header({
       }
 
       if (response.status === true && response.data?.[0]?.thumbnail) {
-        console.log('Valid response with thumbnail:', response.data[0]);
         setShowThumbnail(true);
       } else {
         console.error('Invalid response format:', {
@@ -123,7 +122,7 @@ export default function Header({
       ) : (
         <div className="flex flex-col items-center mt-8">
           {data?.data?.[0]?.thumbnail && (
-            <div className="relative w-[300px] h-[300px] mb-6 rounded-lg overflow-hidden bg-gray-400">
+            <div className="relative w-[20vh] md:w-[300px] h-[20vh] md:h-[300px] mb-6 rounded-lg overflow-hidden bg-gray-400">
               <Image
                 src={data.data[0].thumbnail}
                 alt="Video thumbnail"
@@ -137,18 +136,15 @@ export default function Header({
             <button
               onClick={handleDownload}
               disabled={isDownloading || !data?.data?.[0]?.url}
-              className={`h-12 w-48 rounded-[20px] bg-black hover:scale-105 duration-300 ${
+              className={`h-12 w-38 md:w-48 rounded-[20px] bg-black hover:scale-105 duration-300 ${
                 isDownloading || !data?.data?.[0]?.url ? "opacity-50 cursor-not-allowed" : ""
               }`}
             >
-              {isDownloading ? <RiseLoader color="white" size={8} /> : "Download Video"}
+             Download Video
             </button>
             <button
               onClick={handleReset}
-              disabled={isDownloading}
-              className={`h-12 w-48 rounded-[20px] bg-gray-600 hover:scale-105 duration-300 ${
-                isDownloading ? "opacity-50 cursor-not-allowed" : ""
-              }`}
+              className="h-12 w-38 md:w-48 rounded-[20px] bg-gray-600 hover:scale-105 duration-300"
             >
               Try Another
             </button>
