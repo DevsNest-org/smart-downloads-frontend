@@ -10,7 +10,7 @@ export default function Footer() {
         className="flex items-center space-x-3 rtl:space-x-reverse"
       >
         <span className="self-center text-xl font-normal whitespace-nowrap">
-          Devsnest
+        SmartDownloads
         </span>
       </Link>
       <ul className="font-medium mt-6 mb-2 flex flex-col md:flex-row items-center md:space-x-8 rtl:space-x-reverse md:border-0 ">

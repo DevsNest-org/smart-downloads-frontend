@@ -22,7 +22,7 @@ export default function Navbar({
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <span className="self-center text-xl font-normal whitespace-nowrap text-black">
-            Devsnest
+            SmartDownloads
           </span>
         </Link>
         <div
