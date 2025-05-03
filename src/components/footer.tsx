@@ -48,7 +48,7 @@ export default function Footer() {
           </Link>
         </li>
         <li>
-          <Link href="/" className="block py-2 px-3 font-normal text-black/75 ">
+          <Link href="/contact" className="block py-2 px-3 font-normal text-black/75 ">
             Contact Us
           </Link>
         </li>

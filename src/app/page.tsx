@@ -2,6 +2,16 @@ import BestQuality from "@/components/ui/sections/bestquality";
 import DownloadFrom from "@/components/ui/sections/downloadfrom";
 import Header from "@/components/ui/sections/header";
 import HowitWorks from "@/components/ui/sections/howitworks";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Instagram",
+  description:
+    "Download Instagram videos, pictures, reels, IGTV and carousel.",
+  alternates: {
+    canonical: "https://smartdownloads.online",
+  },
+};
 
 export default function Home() {
   return (

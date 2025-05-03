@@ -28,9 +28,10 @@ const inter = Inter({
 });
 
 const title = "Smart Downloads";
+const ogImage = "favicon.ico"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://smartdownloads.devsnest.site"),
+  metadataBase: new URL("https://smartdownloads.online"),
   keywords: [
     "Smart Downloads",
     "Video Downloader",
@@ -41,12 +42,12 @@ export const metadata: Metadata = {
   title,
   applicationName: title,
   manifest: "/site.webmanifest",
-  description: "Sunday Ochuko's official Website.",
+  description: "We’ve taken all the best attributes a downloader can have and placed them in ours",
   openGraph: {
     title,
-    description: "Sunday Ochuko's official Website.",
+    description: "We’ve taken all the best attributes a downloader can have and placed them in ours",
     type: "website",
-    // images: [{ url: ogImage, alt: title }],
+    images: [{ url: ogImage, alt: title }],
   },
 };
 

@@ -2,7 +2,14 @@
 // import BestQuality from "@/components/ui/sections/bestquality";
 // import DownloadFrom from "@/components/ui/sections/downloadfrom";
 // import HowitWorks from "@/components/ui/sections/howitworks";
+import { Metadata } from "next";
 import ComingSoon from "../comingsoon/page";
+
+export const metadata: Metadata = {
+  title: "Youtube",
+  description:
+    "Download YouTube videos and audio and mp4.",
+};
 
 export default function Youtube() {
   return (

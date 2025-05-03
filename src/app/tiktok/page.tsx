@@ -2,7 +2,14 @@
 // import BestQuality from "@/components/ui/sections/bestquality";
 // import DownloadFrom from "@/components/ui/sections/downloadfrom";
 // import HowitWorks from "@/components/ui/sections/howitworks";
+import { Metadata } from "next";
 import ComingSoon from "../comingsoon/page";
+
+export const metadata: Metadata = {
+  title: "tiktok",
+  description:
+    "Download videos from Tiktok.",
+};
 
 export default function Tiktok() {
   return (

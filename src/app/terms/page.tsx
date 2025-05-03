@@ -2,7 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Terms and Conditions",
+    description:
+      "Terms and conditions of use",
+  };
+
+  
 export default function TermsPage() {
   const [isMounted, setIsMounted] = useState(false);
 
