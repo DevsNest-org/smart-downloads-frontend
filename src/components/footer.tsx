@@ -43,7 +43,7 @@ export default function Footer() {
       <ul className="font-medium mt-2 md:mt-0 mb-6 flex flex-col md:flex-row items-center md:space-x-8 rtl:space-x-reverse md:border-0 ">
         {" "}
         <li>
-          <Link href="#" className="block py-2 px-3 font-normal text-black/75 ">
+          <Link href="/terms" className="block py-2 px-3 font-normal text-black/75 ">
             Terms and Conditions
           </Link>
         </li>
@@ -53,7 +53,7 @@ export default function Footer() {
           </Link>
         </li>
         <li>
-          <Link href="/" className="block py-2 px-3 font-normal text-black/75 ">
+          <Link href="/privacy" className="block py-2 px-3 font-normal text-black/75 ">
             Privacy Policy
           </Link>
         </li>
