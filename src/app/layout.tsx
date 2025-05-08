@@ -4,7 +4,7 @@ import RootLayout from "./rootlayout"; // Import the Client Component
 export const metadata: Metadata = {
   title: "Smart Downloads",
   description:
-    "We’ve taken all the best attributes a downloader can have and placed them in ours.",
+    "Download your Instagram videos fast, in HD quality, no watermarks.",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
