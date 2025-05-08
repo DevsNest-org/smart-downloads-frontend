@@ -6,8 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Instagram",
-  description:
-    "Download Instagram videos, pictures, reels, IGTV and carousel.",
+  description: "Download Instagram videos, pictures, reels, IGTV and carousel.",
   alternates: {
     canonical: "https://smartdownloads.online",
   },
