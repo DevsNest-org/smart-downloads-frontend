@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
 import { IoMenu } from "react-icons/io5";
 
@@ -21,9 +22,14 @@ export default function Navbar({
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <span className="self-center text-xl font-normal whitespace-nowrap text-black">
-            SmartDownloads
-          </span>
+          <Image
+            src="/logo.png"
+            alt="SmartDownloads Logo"
+            width={150}
+            height={40}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
         <div
           className="inline-flex md:hidden text-3xl text-black cursor-pointer"

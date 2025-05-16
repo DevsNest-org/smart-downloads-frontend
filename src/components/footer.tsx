@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,9 +10,14 @@ export default function Footer() {
         href="/"
         className="flex items-center space-x-3 rtl:space-x-reverse"
       >
-        <span className="self-center text-xl font-normal whitespace-nowrap">
-        SmartDownloads
-        </span>
+        <Image
+          src="/logo.png"
+          alt="SmartDownloads Logo"
+          width={150}
+          height={40}
+          className="h-10 w-auto"
+          priority
+        />
       </Link>
       <ul className="font-medium mt-6 mb-2 flex flex-col md:flex-row items-center md:space-x-8 rtl:space-x-reverse md:border-0 ">
         <li>
