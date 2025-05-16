@@ -1,3 +1,11 @@
+# Allow all crawlers
 User-agent: *
 Allow: /
-Sitemap: https://smartdownloads.devsnest.site/sitemap.xml
+
+# Sitemap location
+Sitemap: https://smartdownloads.online/sitemap.xml
+
+# Disallow crawling of coming soon pages
+Disallow: /comingsoon
+Disallow: /youtube
+Disallow: /tiktok
